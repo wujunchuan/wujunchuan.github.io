@@ -15,20 +15,19 @@
 
 
 
-<meta name="description" content="每次安装系统都需要安装很多软件，Git，Node，Python，Ruby,Atom,JDK..有些软件是你要直接用的，有些是其它软件所依赖的。安装这些东西，你得先找到它们的官方网站，然后下载适合自己系统的版本，双击安装，Next，Next，下一步，下一步  …  完成！安装完以后，你发现还不能用，因为你不知道这个软件还需要你去安装一个其它的东西。今天来介绍一个Windows下的包管理工具.（Pac">
+<meta name="description" content="经过测试,MacBook Pro (Retina, Mid 2015)在盒盖睡眠的时候会频繁的被唤醒,导致夜间掉电比较严重(有的网友一个晚上掉电10%以上),根据&amp;quot;syslog | grep -i &amp;quot;Wake reason&amp;quot;显示,也是有被频繁唤醒的记录,虽然掉电没有他们的那么严重,研究了一下各路的解决方案,找到了最终的一个解决方案">
 <meta property="og:type" content="article">
-<meta property="og:title" content="如何在Windows下使用包管理">
-<meta property="og:url" content="http://yoursite.com/2016/11/04/如何在windows下使用包管理/index.html">
+<meta property="og:title" content="MacBook Pro Retina 睡眠耗电现象修复">
+<meta property="og:url" content="http://yoursite.com/2016/11/04/Macbook Pro Retina休眠耗电现象修复/index.html">
 <meta property="og:site_name" content="一个膜蛤师的自我修养">
-<meta property="og:description" content="每次安装系统都需要安装很多软件，Git，Node，Python，Ruby,Atom,JDK..有些软件是你要直接用的，有些是其它软件所依赖的。安装这些东西，你得先找到它们的官方网站，然后下载适合自己系统的版本，双击安装，Next，Next，下一步，下一步  …  完成！安装完以后，你发现还不能用，因为你不知道这个软件还需要你去安装一个其它的东西。今天来介绍一个Windows下的包管理工具.（Pac">
-<meta property="og:image" content="https://cloud.githubusercontent.com/assets/7511631/19415633/ac5943c4-93a8-11e6-9e65-2f3be018d29f.png">
-<meta property="og:image" content="https://cloud.githubusercontent.com/assets/7511631/19415641/ec334364-93a8-11e6-9bb2-5ed2ca5d905c.png">
-<meta property="og:image" content="https://cloud.githubusercontent.com/assets/7511631/19415657/821d8240-93a9-11e6-9bca-a5de94604649.png">
-<meta property="og:updated_time" content="2016-11-04T02:45:58.000Z">
+<meta property="og:description" content="经过测试,MacBook Pro (Retina, Mid 2015)在盒盖睡眠的时候会频繁的被唤醒,导致夜间掉电比较严重(有的网友一个晚上掉电10%以上),根据&amp;quot;syslog | grep -i &amp;quot;Wake reason&amp;quot;显示,也是有被频繁唤醒的记录,虽然掉电没有他们的那么严重,研究了一下各路的解决方案,找到了最终的一个解决方案">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/006y8mN6gw1f9fehqz351j31d212yao8.jpg">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/006y8mN6gw1f9ffv844zyj30ue0mojx1.jpg">
+<meta property="og:updated_time" content="2016-11-04T02:57:47.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="如何在Windows下使用包管理">
-<meta name="twitter:description" content="每次安装系统都需要安装很多软件，Git，Node，Python，Ruby,Atom,JDK..有些软件是你要直接用的，有些是其它软件所依赖的。安装这些东西，你得先找到它们的官方网站，然后下载适合自己系统的版本，双击安装，Next，Next，下一步，下一步  …  完成！安装完以后，你发现还不能用，因为你不知道这个软件还需要你去安装一个其它的东西。今天来介绍一个Windows下的包管理工具.（Pac">
-<meta name="twitter:image" content="https://cloud.githubusercontent.com/assets/7511631/19415633/ac5943c4-93a8-11e6-9e65-2f3be018d29f.png">
+<meta name="twitter:title" content="MacBook Pro Retina 睡眠耗电现象修复">
+<meta name="twitter:description" content="经过测试,MacBook Pro (Retina, Mid 2015)在盒盖睡眠的时候会频繁的被唤醒,导致夜间掉电比较严重(有的网友一个晚上掉电10%以上),根据&amp;quot;syslog | grep -i &amp;quot;Wake reason&amp;quot;显示,也是有被频繁唤醒的记录,虽然掉电没有他们的那么严重,研究了一下各路的解决方案,找到了最终的一个解决方案">
+<meta name="twitter:image" content="http://ww3.sinaimg.cn/large/006y8mN6gw1f9fehqz351j31d212yao8.jpg">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -58,7 +57,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>如何在Windows下使用包管理 | 一个膜蛤师的自我修养</title>
+<title>MacBook Pro Retina 睡眠耗电现象修复 | 一个膜蛤师的自我修养</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -266,11 +265,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-如何在windows下使用包管理" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-Macbook Pro Retina休眠耗电现象修复" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/11/04/如何在windows下使用包管理/" class="article-date">
-      <time datetime="2016-11-04T02:40:07.000Z" itemprop="datePublished">2016-11-04</time>
+      <a href="/2016/11/04/Macbook Pro Retina休眠耗电现象修复/" class="article-date">
+      <time datetime="2016-11-04T02:47:37.000Z" itemprop="datePublished">2016-11-04</time>
 </a>
 
 
@@ -285,7 +284,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      如何在Windows下使用包管理
+      MacBook Pro Retina 睡眠耗电现象修复
     </h1>
   
 
@@ -300,7 +299,7 @@
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/工具/">工具</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/爬坑记录/">爬坑记录</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -310,25 +309,35 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>每次安装系统都需要安装很多软件，Git，Node，Python，Ruby,Atom,JDK..有些软件是你要直接用的，有些是其它软件所依赖的。安装这些东西，你得先找到它们的官方网站，然后下载适合自己系统的版本，双击安装，Next，Next，下一步，下一步  …  完成！安装完以后，你发现还不能用，因为你不知道这个软件还需要你去安装一个其它的东西。今天来介绍一个Windows下的包管理工具.（Package Manager）<br>Chocolatey官网: <a href="https://chocolatey.org/" target="_blank" rel="external">The package manager for Windows</a></p>
+        <p>经过测试,MacBook Pro (Retina, Mid 2015)在盒盖睡眠的时候会频繁的被唤醒,导致夜间掉电比较严重(有的网友一个晚上掉电10%以上),根据<code>&quot;syslog | grep -i &quot;Wake reason&quot;</code>显示,也是有被频繁唤醒的记录,虽然掉电没有他们的那么严重,研究了一下各路的解决方案,找到了最终的一个解决方案</p>
 <a id="more"></a>
-<h3 id="包管理工具是什么"><a href="#包管理工具是什么" class="headerlink" title="包管理工具是什么"></a>包管理工具是什么</h3><p>包管理工具，可以让我们用几个简单的命令去安装，升级，还有删除软件，并且它会自动给我们解决软件之间的依赖的问题。</p>
-<p>这里说的包管理工具是指操作系统的包管理工具,也就是管理安装到操作系统上的软件的工具..Windows用户可以用<code>Chocolatey</code>,Mac用户可以用<code>Homebrew</code></p>
-<p>还有项目级别的包管理工具,比如前端的<code>npm</code>,<code>Bower</code>…</p>
-<p>安装Chocolatey步骤移步官方文档</p>
-<blockquote>
-<p><a href="https://chocolatey.org/install" target="_blank" rel="external">Installing Chocolatey</a></p>
-<blockquote>
-<p><strong>注意,</strong>在Windows10下没有在<strong>超级管理员</strong>权限下使用CMD的话,安装会报错</p>
-<h3 id="如果被伟光正的墙堵了-参考下面"><a href="#如果被伟光正的墙堵了-参考下面" class="headerlink" title="如果被伟光正的墙堵了,参考下面"></a>如果被伟光正的墙堵了,参考下面</h3></blockquote>
-</blockquote>
-<p>使用Proxifier将SHadowsocks的代理映射到全局</p>
-<blockquote>
-<p>下载地址:<a href="https://www.proxifier.com/" target="_blank" rel="external">Proxifier</a></p>
-</blockquote>
-<p>profile-Proxy servers<br><img src="https://cloud.githubusercontent.com/assets/7511631/19415633/ac5943c4-93a8-11e6-9e65-2f3be018d29f.png" alt="image"></p>
-<p>配置完了点击Check,如果没问题,就会显示<br><img src="https://cloud.githubusercontent.com/assets/7511631/19415641/ec334364-93a8-11e6-9bb2-5ed2ca5d905c.png" alt="image"></p>
-<h3 id="尝试安装下Python"><a href="#尝试安装下Python" class="headerlink" title="尝试安装下Python"></a>尝试安装下Python</h3><p>在<code>windows cmd</code> 下输入 <code>choco install python2</code><br>默认安装在<code>C:\tools\</code>下,安装成功后会自动帮你配置环境变量,重启命令行窗口就可生效<br><img src="https://cloud.githubusercontent.com/assets/7511631/19415657/821d8240-93a9-11e6-9bca-a5de94604649.png" alt="image"></p>
+<h1 id="MacBook-Pro-Retina-睡眠耗电现象修复"><a href="#MacBook-Pro-Retina-睡眠耗电现象修复" class="headerlink" title="MacBook Pro Retina 睡眠耗电现象修复"></a>MacBook Pro Retina 睡眠耗电现象修复</h1><p>经过测试,MacBook Pro (Retina, Mid 2015)在盒盖睡眠的时候会频繁的被唤醒,导致夜间掉电比较严重(有的网友一个晚上掉电10%以上),根据<code>&quot;syslog | grep -i &quot;Wake reason&quot;</code>显示,也是有被频繁唤醒的记录,虽然掉电没有他们的那么严重,研究了一下各路的解决方案,找到了最终的一个解决方案<br>如果你在终端中输入 <code>&quot;syslog | grep -i &quot;Wake reason&quot;</code>有像下面的情况的,那么就请注意了,因为这个问题似乎已经存在一段时间了,并且问题集中在2015年后的机型上,网上有挺多讨论的,并且在最新的系统(<strong>macOS Sierra 10.12.1 (16B2657)</strong>),苹果并没有修复这个问题,只能靠我们自己来手动解决了</p>
+<p><strong>升级到macOS Sierra</strong>之后,被唤醒的情况有所好转,Sierra在休眠之后会自动禁用掉WiFi连接,但是还是会被唤醒</p>
+<p><img src="http://ww3.sinaimg.cn/large/006y8mN6gw1f9fehqz351j31d212yao8.jpg" alt="syslog"></p>
+<h1 id="产生问题的原因"><a href="#产生问题的原因" class="headerlink" title="产生问题的原因"></a>产生问题的原因</h1><p>论坛上大部分的回答都是集中在<strong>app唤醒</strong>,<strong>Power Nap</strong>,<strong>网络唤醒</strong>,<strong>重置SMC</strong>等解决方案,如果你尝试了上面的各种办法还是没有解决的话,可以继续往下读</p>
+<p>我们通过分析系统日志(上图)就可以看到,我们的机器被TCP超时频繁的唤醒,所以,最简单的解决办法就是每次在盒盖前,把<strong>WiFi</strong>手动断开就可以,如果是不爱折腾的同学可以考虑考虑.也就动动手关掉WiFi嘛</p>
+<h1 id="解决问题"><a href="#解决问题" class="headerlink" title="解决问题"></a>解决问题</h1><p>既然我们知道,导致休眠失败的原因是网络频繁被唤醒,那么要嘛手动关闭网络,要嘛自动关闭网络,如果有个工具,可以检测系统休眠状态,并且对其进行WiFi的切断与唤醒就好了.</p>
+<p>正好我发现了这篇文章<br><a href="https://kevindekoninck.com/portfolio-item/pleasesleep" target="_blank" rel="external">A Macbook Pro’s insomnia solution</a></p>
+<p>这位外国友人的解决方案,正是我上面说的,通过<code>sleepwatcher</code>来监听系统休眠情况,并且对其WiFi进行操作</p>
+<h1 id="手动挡司机"><a href="#手动挡司机" class="headerlink" title="手动挡司机"></a>手动挡司机</h1><p>首先,得先安装<code>sleepwatcher</code>,这里推荐使用brew形式来安装,如果还没有用上<code>brew</code>的同学,<a href="http://brew.sh/" target="_blank" rel="external">请点击获取Homebrew</a><br>在终端中输入<code>/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</code></p>
+<p>随后安装<code>sleepwatcher</code>执行下面语句<code>brew install sleepwatcher</code></p>
+<p><code>SleepWatcher</code>默认执行<code>wake</code>事件配置文件是在<code>~/.wakeup</code>,执行<code>sleep</code>事件配置文件是在<code>~/. sleep</code>所以我们将下面两个脚本复制到用户目录下</p>
+<p><strong>.sleep</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">#!/bin/bash</div><div class="line"> </div><div class="line">status=$(networksetup getairportpower en0 | grep -Ei &quot;On$&quot;)</div><div class="line"> </div><div class="line">if [ -f /tmp/wifi.on ]; then</div><div class="line">    rm /tmp/wifi.on</div><div class="line">fi</div><div class="line"> </div><div class="line">if [ &quot;&quot; !=  &quot;$status&quot; ]; then</div><div class="line">    echo &quot;`date` -- WiFi is On ... storing statement&quot; &gt;&gt; /tmp/sleep.log</div><div class="line">    </div><div class="line">    touch /tmp/wifi.on</div><div class="line">    networksetup setairportpower en0 off</div><div class="line">fi</div></pre></td></tr></table></figure>
+<p><strong>.wakeup</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">if [ -f /tmp/wifi.on ]; then</div><div class="line">    echo &quot;`date` -- Enablig WiFi&quot; &gt;&gt; /tmp/sleep.log</div><div class="line">    sleep 3</div><div class="line">    networksetup setairportpower en0 on</div><div class="line">fi</div></pre></td></tr></table></figure>
+<p>最后执行,令上面两个脚本生效,省得重启</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cp /usr/local/Cellar/sleepwatcher/2.2/*.plist ~/Library/LaunchAgents</div><div class="line">launchctl load ~/Library/LaunchAgents/de.bernhard-baehr.sleepwatcher-20compatibility-localuser.plist</div></pre></td></tr></table></figure>
+<p>关于脚本的解释,可以看原文<br><img src="http://ww3.sinaimg.cn/large/006y8mN6gw1f9ffv844zyj30ue0mojx1.jpg" alt=""></p>
+<h1 id="自动挡用户"><a href="#自动挡用户" class="headerlink" title="自动挡用户"></a>自动挡用户</h1><p>作者本人也是写了一个shell脚本来帮助大家,只需要根据<code>README</code>写的步骤来执行shell,就可以完成安装.<br>下载解压后进入该目录,在终端输入</p>
+<p><code>bash PleaseSleep install</code>等待安装完成</p>
+<p>如果日后需要删除的话,在终端输入<br><code>bash PleaseSleep uninstall</code></p>
+<p>下载地址:<a href="http://7xvzr6.com1.z0.glb.clouddn.com/PleaseSleep.7z" target="_blank" rel="external">PleaseSleep.7z</a></p>
+<h1 id="相关阅读"><a href="#相关阅读" class="headerlink" title="相关阅读"></a>相关阅读</h1><p>可以参考下面几篇文章,对这个问题有个整体的认识</p>
+<p><a href="http://zengrong.net/post/2545.htm#_3" target="_blank" rel="external">MacBook Pro Retina 睡眠耗电现象深究</a></p>
+<p><a href="http://www.macx.cn/thread-2176715-1-3.html" target="_blank" rel="external">关于休眠耗电问题求助</a></p>
+<p><a href="https://kevindekoninck.com/portfolio-item/pleasesleep" target="_blank" rel="external">A Macbook Pro’s insomnia solution</a></p>
+<p><a href="https://discussions.apple.com/thread/7010693?start=180&amp;tstart=0" target="_blank" rel="external">rMBP 2015 Wake Reason: ARPT (Network)</a></p>
 
       
     </div>
@@ -337,13 +346,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/11/04/如何在windows下使用包管理/">如何在Windows下使用包管理</a></p>
+        <p><span>本文标题:</span><a href="/2016/11/04/Macbook Pro Retina休眠耗电现象修复/">MacBook Pro Retina 睡眠耗电现象修复</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">John Trump</a></p>
-        <p><span>发布时间:</span>2016-11-04, 10:40:07</p>
-        <p><span>最后更新:</span>2016-11-04, 10:45:58</p>
+        <p><span>发布时间:</span>2016-11-04, 10:47:37</p>
+        <p><span>最后更新:</span>2016-11-04, 10:57:47</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/11/04/如何在windows下使用包管理/" title="如何在Windows下使用包管理">http://yoursite.com/2016/11/04/如何在windows下使用包管理/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/11/04/如何在windows下使用包管理/　　作者: John Trump" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/11/04/Macbook Pro Retina休眠耗电现象修复/" title="MacBook Pro Retina 睡眠耗电现象修复">http://yoursite.com/2016/11/04/Macbook Pro Retina休眠耗电现象修复/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/11/04/Macbook Pro Retina休眠耗电现象修复/　　作者: John Trump" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -356,15 +365,15 @@
     <nav id="article-nav">
         
             <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/11/04/Macbook Pro Retina休眠耗电现象修复/">
-                    MacBook Pro Retina 睡眠耗电现象修复
+                <a href="/2016/11/04/browser-cross/">
+                    
                 </a>
             </div>
         
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/11/04/css-sass-introduction/">
-                    Sass简单入门
+                <a href="/2016/11/04/如何在windows下使用包管理/">
+                    如何在Windows下使用包管理
                 </a>
             </div>
         
@@ -376,7 +385,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#包管理工具是什么"><span class="toc-number">1.</span> <span class="toc-text">包管理工具是什么</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#如果被伟光正的墙堵了-参考下面"><span class="toc-number">2.</span> <span class="toc-text">如果被伟光正的墙堵了,参考下面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#尝试安装下Python"><span class="toc-number">3.</span> <span class="toc-text">尝试安装下Python</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#MacBook-Pro-Retina-睡眠耗电现象修复"><span class="toc-number">1.</span> <span class="toc-text">MacBook Pro Retina 睡眠耗电现象修复</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#产生问题的原因"><span class="toc-number">2.</span> <span class="toc-text">产生问题的原因</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#解决问题"><span class="toc-number">3.</span> <span class="toc-text">解决问题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#手动挡司机"><span class="toc-number">4.</span> <span class="toc-text">手动挡司机</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#自动挡用户"><span class="toc-number">5.</span> <span class="toc-text">自动挡用户</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#相关阅读"><span class="toc-number">6.</span> <span class="toc-text">相关阅读</span></a></li></ol>
         
     </div>
     <style>
@@ -412,7 +421,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"如何在Windows下使用包管理　| 一个膜蛤师的自我修养　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"MacBook Pro Retina 睡眠耗电现象修复　| 一个膜蛤师的自我修养　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -428,7 +437,7 @@
     
       <div class="duoshuo" id="comments">
     <div id="comment-box" ></div>
-    <div class="ds-thread" id="ds-thread" data-thread-key="2016/11/04/如何在windows下使用包管理/" data-title="如何在Windows下使用包管理" data-url="http://yoursite.com/2016/11/04/如何在windows下使用包管理/"></div>
+    <div class="ds-thread" id="ds-thread" data-thread-key="2016/11/04/Macbook Pro Retina休眠耗电现象修复/" data-title="MacBook Pro Retina 睡眠耗电现象修复" data-url="http://yoursite.com/2016/11/04/Macbook Pro Retina休眠耗电现象修复/"></div>
     <script>
         var duoshuoQuery = {short_name:"johntrump"};
         var loadComment = function(){
@@ -451,7 +460,7 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/11/04/Macbook Pro Retina休眠耗电现象修复/" title="上一篇: MacBook Pro Retina 睡眠耗电现象修复">
+            <a href="/2016/11/04/browser-cross/" title="上一篇: ">
                 <i class="fa fa-angle-left"></i>
             </a>
         
@@ -459,7 +468,7 @@
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2016/11/04/css-sass-introduction/" title="下一篇: Sass简单入门">
+            <a href="/2016/11/04/如何在windows下使用包管理/" title="下一篇: 如何在Windows下使用包管理">
                 <i class="fa fa-angle-right"></i>
             </a>
         

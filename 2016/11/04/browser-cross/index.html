@@ -14,19 +14,23 @@
 <meta name="author" content="John Trump" />
 
 
-    
-    
 
-
-<meta name="description" content="一个程序员的自我修养之路">
-<meta property="og:type" content="website">
+<meta name="description" content="浏览器跨域策略同一个域名下的 允许通信:http://www.baidu.com/a.js http://www.baidu.com/b.js
+同一个域名下的不同文件夹 允许通信:http://www.baidu.com/a.js http://www.baidu.com/src/b.js
+同一个域名的不同端口 不允许通信:http://www.baidu.com/a.js http://www.">
+<meta property="og:type" content="article">
 <meta property="og:title" content="一个膜蛤师的自我修养">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/11/04/browser-cross/index.html">
 <meta property="og:site_name" content="一个膜蛤师的自我修养">
-<meta property="og:description" content="一个程序员的自我修养之路">
+<meta property="og:description" content="浏览器跨域策略同一个域名下的 允许通信:http://www.baidu.com/a.js http://www.baidu.com/b.js
+同一个域名下的不同文件夹 允许通信:http://www.baidu.com/a.js http://www.baidu.com/src/b.js
+同一个域名的不同端口 不允许通信:http://www.baidu.com/a.js http://www.">
+<meta property="og:updated_time" content="2016-11-07T01:26:02.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一个膜蛤师的自我修养">
-<meta name="twitter:description" content="一个程序员的自我修养之路">
+<meta name="twitter:description" content="浏览器跨域策略同一个域名下的 允许通信:http://www.baidu.com/a.js http://www.baidu.com/b.js
+同一个域名下的不同文件夹 允许通信:http://www.baidu.com/a.js http://www.baidu.com/src/b.js
+同一个域名的不同端口 不允许通信:http://www.baidu.com/a.js http://www.">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -52,8 +56,6 @@
 <link rel="stylesheet" href="/css/style.css">
 
 
-    <style> .article { opacity: 0;} </style>
-
 
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
@@ -67,8 +69,8 @@
     var yiliaConfig = {
         fancybox: true,
         animate: true,
-        isHome: true,
-        isPost: false,
+        isHome: false,
+        isPost: true,
         isArchive: false,
         isTag: false,
         isCategory: false,
@@ -266,24 +268,13 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-browser-cross" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-browser-cross" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2016/11/04/browser-cross/" class="article-date">
       <time datetime="2016-11-04T15:52:16.000Z" itemprop="datePublished">2016-11-04</time>
 </a>
 
- 
-    <a href="/2016/11/04/browser-cross/#comments" title="查看评论">
-        <i class="fa fa-comments-o" aria-hidden="true"></i>
-        <span class="count-comment"></span>
-        
-            <span class="ds-thread-count"  data-thread-key="2016/11/04/browser-cross/" ></span>
-        
-        
-    </a>
 
     </div>
   
@@ -372,635 +363,138 @@
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
   </div>
   
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-Macbook Pro Retina休眠耗电现象修复" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/11/04/Macbook Pro Retina休眠耗电现象修复/" class="article-date">
-      <time datetime="2016-11-04T02:47:37.000Z" itemprop="datePublished">2016-11-04</time>
-</a>
-
- 
-    <a href="/2016/11/04/Macbook Pro Retina休眠耗电现象修复/#comments" title="查看评论">
-        <i class="fa fa-comments-o" aria-hidden="true"></i>
-        <span class="count-comment"></span>
-        
-            <span class="ds-thread-count"  data-thread-key="2016/11/04/Macbook Pro Retina休眠耗电现象修复/" ></span>
-        
-        
-    </a>
-
-    </div>
-  
-  <div class="article-inner">
     
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/04/Macbook Pro Retina休眠耗电现象修复/">MacBook Pro Retina 睡眠耗电现象修复</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p>经过测试,MacBook Pro (Retina, Mid 2015)在盒盖睡眠的时候会频繁的被唤醒,导致夜间掉电比较严重(有的网友一个晚上掉电10%以上),根据<code>&quot;syslog | grep -i &quot;Wake reason&quot;</code>显示,也是有被频繁唤醒的记录,虽然掉电没有他们的那么严重,研究了一下各路的解决方案,找到了最终的一个解决方案</p>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/编程随想/">编程随想</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/爬坑记录/">爬坑记录</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2016/11/04/Macbook Pro Retina休眠耗电现象修复/#more">阅读全文 >></a>
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2016/11/04/browser-cross/"></a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">John Trump</a></p>
+        <p><span>发布时间:</span>2016-11-04, 23:52:16</p>
+        <p><span>最后更新:</span>2016-11-07, 09:26:02</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2016/11/04/browser-cross/" title="">http://yoursite.com/2016/11/04/browser-cross/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/11/04/browser-cross/　　作者: John Trump" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-如何在windows下使用包管理" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/11/04/如何在windows下使用包管理/" class="article-date">
-      <time datetime="2016-11-04T02:40:07.000Z" itemprop="datePublished">2016-11-04</time>
-</a>
-
- 
-    <a href="/2016/11/04/如何在windows下使用包管理/#comments" title="查看评论">
-        <i class="fa fa-comments-o" aria-hidden="true"></i>
-        <span class="count-comment"></span>
-        
-            <span class="ds-thread-count"  data-thread-key="2016/11/04/如何在windows下使用包管理/" ></span>
-        
-        
-    </a>
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/04/如何在windows下使用包管理/">如何在Windows下使用包管理</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p>每次安装系统都需要安装很多软件，Git，Node，Python，Ruby,Atom,JDK..有些软件是你要直接用的，有些是其它软件所依赖的。安装这些东西，你得先找到它们的官方网站，然后下载适合自己系统的版本，双击安装，Next，Next，下一步，下一步  …  完成！安装完以后，你发现还不能用，因为你不知道这个软件还需要你去安装一个其它的东西。今天来介绍一个Windows下的包管理工具.（Package Manager）<br>Chocolatey官网: <a href="https://chocolatey.org/">The package manager for Windows</a></p>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/编程随想/">编程随想</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/工具/">工具</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2016/11/04/如何在windows下使用包管理/#more">阅读全文 >></a>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
         </p>
-      
-      <div class="clearfix"></div>
     </div>
-    
-  </div>
+
+
+
+    <nav id="article-nav">
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2016/11/04/Macbook Pro Retina休眠耗电现象修复/">
+                    MacBook Pro Retina 睡眠耗电现象修复
+                </a>
+            </div>
+        
+    </nav>
+
   
 </article>
 
-
-
-
-
-
-
-
-
-  
-    <article id="post-css-sass-introduction" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/11/04/css-sass-introduction/" class="article-date">
-      <time datetime="2016-11-04T02:00:44.000Z" itemprop="datePublished">2016-11-04</time>
-</a>
-
- 
-    <a href="/2016/11/04/css-sass-introduction/#comments" title="查看评论">
-        <i class="fa fa-comments-o" aria-hidden="true"></i>
-        <span class="count-comment"></span>
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
         
-            <span class="ds-thread-count"  data-thread-key="2016/11/04/css-sass-introduction/" ></span>
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#浏览器跨域策略"><span class="toc-number">1.</span> <span class="toc-text">浏览器跨域策略</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#跨域的几种办法"><span class="toc-number">1.1.</span> <span class="toc-text">跨域的几种办法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#通过document-domain来跨域"><span class="toc-number">1.1.1.</span> <span class="toc-text">通过document.domain来跨域</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#通过location-hash跨域-–锚点技术"><span class="toc-number">1.1.2.</span> <span class="toc-text">通过location.hash跨域 –锚点技术</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用有src的标签"><span class="toc-number">1.1.3.</span> <span class="toc-text">使用有src的标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JSONP"><span class="toc-number">1.1.4.</span> <span class="toc-text">JSONP</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#JQuery中有帮我们封装了一个JSONP的方法"><span class="toc-number">1.1.4.1.</span> <span class="toc-text">JQuery中有帮我们封装了一个JSONP的方法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#navigation对象"><span class="toc-number">1.1.5.</span> <span class="toc-text">navigation对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CORS-跨域资源共享"><span class="toc-number">1.1.6.</span> <span class="toc-text">CORS 跨域资源共享</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用window-postMessage"><span class="toc-number">1.1.7.</span> <span class="toc-text">使用window.postMessage</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#总结"><span class="toc-number">1.1.8.</span> <span class="toc-text">总结</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#相关阅读"><span class="toc-number">1.1.9.</span> <span class="toc-text">相关阅读</span></a></li></ol></li></ol></li></ol>
         
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"true"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"　| 一个膜蛤师的自我修养　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
+
+
+
+
+
+
+
+    
+      <div class="duoshuo" id="comments">
+    <div id="comment-box" ></div>
+    <div class="ds-thread" id="ds-thread" data-thread-key="2016/11/04/browser-cross/" data-title="" data-url="http://yoursite.com/2016/11/04/browser-cross/"></div>
+    <script>
+        var duoshuoQuery = {short_name:"johntrump"};
+        var loadComment = function(){
+            var d = document, s = d.createElement('script');
+            s.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+            s.async = true; s.charset = 'UTF-8';
+            (d.head || d.body).appendChild(s);
+        }
+
         
-    </a>
+    </script>
+    
+    <script> loadComment(); </script>
 
-    </div>
-  
-  <div class="article-inner">
+</div>
     
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+
+
+
+
+    <div class="scroll" id="post-nav-button">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/04/css-sass-introduction/">Sass简单入门</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p>每一次CSS样式写到最后，都是为了实现而实现，感觉非常混乱，我一直都想学一学<strong>CSS预处理器</strong>，把CSS的开发变得更加的简单可维护。<br>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/编程随想/">编程随想</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/编程/">编程</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2016/11/04/css-sass-introduction/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/11/04/hello-world/" class="article-date">
-      <time datetime="2016-11-04T02:00:44.000Z" itemprop="datePublished">2016-11-04</time>
-</a>
-
- 
-    <a href="/2016/11/04/hello-world/#comments" title="查看评论">
-        <i class="fa fa-comments-o" aria-hidden="true"></i>
-        <span class="count-comment"></span>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
-            <span class="ds-thread-count"  data-thread-key="2016/11/04/hello-world/" ></span>
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
         
+            <a href="/2016/11/04/Macbook Pro Retina休眠耗电现象修复/" title="下一篇: MacBook Pro Retina 睡眠耗电现象修复">
+                <i class="fa fa-angle-right"></i>
+            </a>
         
-    </a>
-
     </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/11/04/browser-cross/">browser-cross</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/04/Macbook Pro Retina休眠耗电现象修复/">MacBook Pro Retina 睡眠耗电现象修复</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/04/如何在windows下使用包管理/">如何在Windows下使用包管理</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/04/css-sass-introduction/">Sass简单入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/04/hello-world/">Hello World</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/04/css-priority/">CSS样式的优先级</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/04/如何解决atom无法安装package的问题/">如何解决atom无法安装package的问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/04/如果在Hexo中添加README到github/">如何在Hexo中添加README到github</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/03/unified-wrap/">unified-wrap</a></li></ul>
+
+
+
+
+    <script>
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/04/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p>我一直都有写点自己的博客的念头，之前尝试着在<a href="http://www.jianshu.com/users/a176ad7b068b/latest_articles">简书</a>写过几篇。简书的书写体验确实不错，但是身为程序员，个人博客是体现个性的地方，怎么能所有人都是外观一样的，这点使我萌发了自己搭建一个博客的想法。</p>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/编程随想/">编程随想</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/杂谈/">杂谈</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2016/11/04/hello-world/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-css-priority" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/11/04/css-priority/" class="article-date">
-      <time datetime="2016-11-04T02:00:44.000Z" itemprop="datePublished">2016-11-04</time>
-</a>
-
- 
-    <a href="/2016/11/04/css-priority/#comments" title="查看评论">
-        <i class="fa fa-comments-o" aria-hidden="true"></i>
-        <span class="count-comment"></span>
-        
-            <span class="ds-thread-count"  data-thread-key="2016/11/04/css-priority/" ></span>
-        
-        
-    </a>
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/04/css-priority/">CSS样式的优先级</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><p>浏览器通过优先级来判断哪一些属性值与一个元素最为相关从而在该元素上应用这些属性值<br>当优先级与多个CSS声明中任意一个声明的优先级相等的时候,<strong>最后一个声明</strong>会应用在元素上,这就是CSS样式的优先级</p>
-<blockquote>
-<p>要注意的是元素在文档中的位置并不会影响到优先级</p>
-</blockquote>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/编程随想/">编程随想</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/编程/">编程</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2016/11/04/css-priority/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-如何解决atom无法安装package的问题" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/11/04/如何解决atom无法安装package的问题/" class="article-date">
-      <time datetime="2016-11-04T02:00:44.000Z" itemprop="datePublished">2016-11-04</time>
-</a>
-
- 
-    <a href="/2016/11/04/如何解决atom无法安装package的问题/#comments" title="查看评论">
-        <i class="fa fa-comments-o" aria-hidden="true"></i>
-        <span class="count-comment"></span>
-        
-            <span class="ds-thread-count"  data-thread-key="2016/11/04/如何解决atom无法安装package的问题/" ></span>
-        
-        
-    </a>
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/04/如何解决atom无法安装package的问题/">如何解决atom无法安装package的问题</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p>不知道你们有没有遇到类似的情况。 <a href="https://github.com/atom/atom/issues/11080">apm install failed in HTTP 404 error when gyp is downloading node.js with a fresh install atom #11080</a></p>
-<p>使用atom在线安装插件总是失败,之前遇到这个问题我直接用<code>git clone</code>下载插件,然后执行<code>npm install</code>也是可以的。但是不能用到atom的在线安装,总有点不甘。后来查了很多文档，找到了原因……<br>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/编程随想/">编程随想</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/杂谈/">杂谈</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2016/11/04/如何解决atom无法安装package的问题/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-如果在Hexo中添加README到github" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/11/04/如果在Hexo中添加README到github/" class="article-date">
-      <time datetime="2016-11-04T02:00:44.000Z" itemprop="datePublished">2016-11-04</time>
-</a>
-
- 
-    <a href="/2016/11/04/如果在Hexo中添加README到github/#comments" title="查看评论">
-        <i class="fa fa-comments-o" aria-hidden="true"></i>
-        <span class="count-comment"></span>
-        
-            <span class="ds-thread-count"  data-thread-key="2016/11/04/如果在Hexo中添加README到github/" ></span>
-        
-        
-    </a>
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/04/如果在Hexo中添加README到github/">如何在Hexo中添加README到github</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p>hexo会把文件夹的下的markdown文件全部解析成html，github的readme只能支持md格式的。网络上有许多种方法。我解决办法其实很简单。<br>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/编程随想/">编程随想</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/编程/">编程</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2016/11/04/如果在Hexo中添加README到github/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-unified-wrap" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/11/03/unified-wrap/" class="article-date">
-      <time datetime="2016-11-03T05:40:35.000Z" itemprop="datePublished">2016-11-03</time>
-</a>
-
- 
-    <a href="/2016/11/03/unified-wrap/#comments" title="查看评论">
-        <i class="fa fa-comments-o" aria-hidden="true"></i>
-        <span class="count-comment"></span>
-        
-            <span class="ds-thread-count"  data-thread-key="2016/11/03/unified-wrap/" ></span>
-        
-        
-    </a>
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h1 id="统一换行符"><a href="#统一换行符" class="headerlink" title="统一换行符"></a>统一换行符</h1><p>在Unix和类Unix系统中,使用<code>\n</code>来表示换行符</p>
-<p>在dos和Windows中使用<code>\r\n</code>来表示换行符</p>
-<p>还有一个早期的Mac系统,最为奇葩,是用<code>\r</code>来表示</p>
-<blockquote>
-<p>导致的结果是,如果Unix系统下的文件在Windows里打开,所有文字都会变成一行,而Windows里的文件在Unix下打开,所有行的结尾多了个<code>^M</code></p>
-</blockquote>
-<h2 id="环境的设定"><a href="#环境的设定" class="headerlink" title="环境的设定"></a>环境的设定</h2><h4 id="Sublime"><a href="#Sublime" class="headerlink" title="Sublime"></a>Sublime</h4><p>在Preference-&gt;Setting-User中加入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&quot;default_line_ending&quot;: &quot;unix&quot;,//Unix风格换行符为准</div><div class="line">&quot;show_line_endings&quot;: true,//在底部显示文件采用的换行符</div></pre></td></tr></table></figure>
-<h4 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h4><p>在终端中输入<code>git config --global core.autocrlf false</code></p>
-<h4 id="VIM"><a href="#VIM" class="headerlink" title="VIM"></a>VIM</h4><p>在<code>~/.vimrc</code>中添加<code>set ffs=unix,dos</code>,以后创建的文件都是<code>\n</code>风格的换行符了</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-  
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
@@ -1054,31 +548,6 @@
         })
     </script>
 
-
-    
-        <script>
-            if ($(".left-col").is(":visible")) {
-                var duoshuoQuery = {short_name:"johntrump"};
-                (function() {
-                    var d = document, s = d.createElement('script');
-                    s.src = 'http://static.duoshuo.com/embed.js';
-                    s.async = true; s.charset = 'UTF-8';
-                    (d.head || d.body).appendChild(s);
-                })();
-
-                $(document).ready(function(){
-                    var $duoshuoCount = $(".ds-thread-count");
-                    $duoshuoCount.bind("DOMNodeInserted", function(e) {
-                        var num = $(this).text().replace(/[^0-9]/ig,"");
-                        $(this).siblings(".count-comment").text(num);
-                        $(this).remove();
-                    })
-                })
-            }
-        </script>
-    
-
-     
 
 
 
