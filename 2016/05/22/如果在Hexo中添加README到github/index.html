@@ -15,16 +15,16 @@
 
 
 
-<meta name="description" content="一个程序员的自我修养之路">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+<meta name="description" content="hexo会把文件夹的下的markdown文件全部解析成html，github的readme只能支持md格式的。网络上有许多种方法。我解决办法其实很简单。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何在Hexo中添加README到github">
+<meta property="og:url" content="http://yoursite.com/2016/05/22/如果在Hexo中添加README到github/index.html">
 <meta property="og:site_name" content="一个膜蛤师的自我修养">
-<meta property="og:description" content="一个程序员的自我修养之路">
-<meta property="og:updated_time" content="2016-11-04T02:00:44.000Z">
+<meta property="og:description" content="hexo会把文件夹的下的markdown文件全部解析成html，github的readme只能支持md格式的。网络上有许多种方法。我解决办法其实很简单。">
+<meta property="og:updated_time" content="2016-11-15T14:29:07.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="一个程序员的自我修养之路">
+<meta name="twitter:title" content="如何在Hexo中添加README到github">
+<meta name="twitter:description" content="hexo会把文件夹的下的markdown文件全部解析成html，github的readme只能支持md格式的。网络上有许多种方法。我解决办法其实很简单。">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -54,7 +54,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>about | 一个膜蛤师的自我修养</title>
+<title>如何在Hexo中添加README到github | 一个膜蛤师的自我修养</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -64,7 +64,7 @@
         fancybox: true,
         animate: true,
         isHome: false,
-        isPost: false,
+        isPost: true,
         isArchive: false,
         isTag: false,
         isCategory: false,
@@ -254,11 +254,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-如果在Hexo中添加README到github" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/about/index.html" class="article-date">
-      <time datetime="2016-07-05T11:42:04.000Z" itemprop="datePublished">2016-07-05</time>
+      <a href="/2016/05/22/如果在Hexo中添加README到github/" class="article-date">
+      <time datetime="2016-05-21T16:00:00.000Z" itemprop="datePublished">2016-05-22</time>
 </a>
 
 
@@ -273,7 +273,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      about
+      如何在Hexo中添加README到github
     </h1>
   
 
@@ -283,6 +283,10 @@
         
 
         
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+    </div>
+
         <div class="clearfix"></div>
       </div>
       
@@ -290,36 +294,79 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <style>
-    .article-meta { display: none; }
-    #container .article .article-title { padding-right: 0; }
-    .article-header {
-        padding: 0;
-        padding-top: 26px;
-        border-left: none;
-        text-align: center;
-    }
-    .article-header:hover { border-left: none; }
-    .article-title { font-size: 1.6em }
-    .article-entry hr { margin: 0;}
-    .article-meta,
-    #container .article-info-post.article-info { display: none;}
-    #container .article .article-title { padding: 0; }
-</style>
+        <p>hexo会把文件夹的下的markdown文件全部解析成html，github的readme只能支持md格式的。网络上有许多种方法。我解决办法其实很简单。<br><a id="more"></a><br>网上的有一种解决办法是：</p>
+<blockquote>
+<p>把<code>README.md</code>的后缀去掉,改成<code>README</code>。</p>
+</blockquote>
+<p>这样的弊端是github只能做出部分的解析，不会将其当做一个完整的markdown文件去处理</p>
+<p>我的解决办法：</p>
+<p>将<code>README.md</code>后缀改为<code>mdown</code>，放入hexo/source文件夹，generation–&gt;deploy即可，这样子hexo不会解析这个文档，github也会将其当做md文件处理</p>
 
-
-          
-        
       
     </div>
     
   </div>
   
     
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2016/05/22/如果在Hexo中添加README到github/">如何在Hexo中添加README到github</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">John Trump</a></p>
+        <p><span>发布时间:</span>2016-05-22, 00:00:00</p>
+        <p><span>最后更新:</span>2016-11-15, 22:29:07</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2016/05/22/如果在Hexo中添加README到github/" title="如何在Hexo中添加README到github">http://yoursite.com/2016/05/22/如果在Hexo中添加README到github/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/05/22/如果在Hexo中添加README到github/　　作者: John Trump" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
 
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2016/07/01/css-priority/">
+                    CSS样式的优先级
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2016/05/20/hello-world/">
+                    Hello World
+                </a>
+            </div>
+        
+    </nav>
 
   
 </article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"true"];
+    </script>
 
 
 
@@ -337,7 +384,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"about　| 一个膜蛤师的自我修养　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"如何在Hexo中添加README到github　| 一个膜蛤师的自我修养　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -353,7 +400,7 @@
     
       <div class="duoshuo" id="comments">
     <div id="comment-box" ></div>
-    <div class="ds-thread" id="ds-thread" data-thread-key="about/index.html" data-title="about" data-url="http://yoursite.com/about/index.html"></div>
+    <div class="ds-thread" id="ds-thread" data-thread-key="2016/05/22/如果在Hexo中添加README到github/" data-title="如何在Hexo中添加README到github" data-url="http://yoursite.com/2016/05/22/如果在Hexo中添加README到github/"></div>
     <script>
         var duoshuoQuery = {short_name:"johntrump"};
         var loadComment = function(){
@@ -371,6 +418,26 @@
 </div>
     
 
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2016/07/01/css-priority/" title="上一篇: CSS样式的优先级">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2016/05/20/hello-world/" title="下一篇: Hello World">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/11/10/browser-cross/">浏览器跨域策略</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/29/Macbook Pro Retina休眠耗电现象修复/">MacBook Pro Retina 睡眠耗电现象修复</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/01/unified-wrap/">统一换行符</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/28/如何解决atom无法安装package的问题/">如何解决atom无法安装package的问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/22/css-sass-introduction/">Sass简单入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/12/如何在windows下使用包管理/">如何在Windows下使用包管理</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/01/css-priority/">CSS样式的优先级</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/22/如果在Hexo中添加README到github/">如何在Hexo中添加README到github</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/20/hello-world/">Hello World</a></li></ul>
 
 
 

@@ -15,16 +15,20 @@
 
 
 
-<meta name="description" content="一个程序员的自我修养之路">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+<meta name="description" content="每次安装系统都需要安装很多软件，Git，Node，Python，Ruby,Atom,JDK..有些软件是你要直接用的，有些是其它软件所依赖的。安装这些东西，你得先找到它们的官方网站，然后下载适合自己系统的版本，双击安装，Next，Next，下一步，下一步  …  完成！安装完以后，你发现还不能用，因为你不知道这个软件还需要你去安装一个其它的东西。今天来介绍一个Windows下的包管理工具.（Pac">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何在Windows下使用包管理">
+<meta property="og:url" content="http://yoursite.com/2016/07/12/如何在windows下使用包管理/index.html">
 <meta property="og:site_name" content="一个膜蛤师的自我修养">
-<meta property="og:description" content="一个程序员的自我修养之路">
-<meta property="og:updated_time" content="2016-11-04T02:00:44.000Z">
+<meta property="og:description" content="每次安装系统都需要安装很多软件，Git，Node，Python，Ruby,Atom,JDK..有些软件是你要直接用的，有些是其它软件所依赖的。安装这些东西，你得先找到它们的官方网站，然后下载适合自己系统的版本，双击安装，Next，Next，下一步，下一步  …  完成！安装完以后，你发现还不能用，因为你不知道这个软件还需要你去安装一个其它的东西。今天来介绍一个Windows下的包管理工具.（Pac">
+<meta property="og:image" content="https://cloud.githubusercontent.com/assets/7511631/19415633/ac5943c4-93a8-11e6-9e65-2f3be018d29f.png">
+<meta property="og:image" content="https://cloud.githubusercontent.com/assets/7511631/19415641/ec334364-93a8-11e6-9bb2-5ed2ca5d905c.png">
+<meta property="og:image" content="https://cloud.githubusercontent.com/assets/7511631/19415657/821d8240-93a9-11e6-9bca-a5de94604649.png">
+<meta property="og:updated_time" content="2016-11-15T14:18:43.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="一个程序员的自我修养之路">
+<meta name="twitter:title" content="如何在Windows下使用包管理">
+<meta name="twitter:description" content="每次安装系统都需要安装很多软件，Git，Node，Python，Ruby,Atom,JDK..有些软件是你要直接用的，有些是其它软件所依赖的。安装这些东西，你得先找到它们的官方网站，然后下载适合自己系统的版本，双击安装，Next，Next，下一步，下一步  …  完成！安装完以后，你发现还不能用，因为你不知道这个软件还需要你去安装一个其它的东西。今天来介绍一个Windows下的包管理工具.（Pac">
+<meta name="twitter:image" content="https://cloud.githubusercontent.com/assets/7511631/19415633/ac5943c4-93a8-11e6-9e65-2f3be018d29f.png">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -54,7 +58,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>about | 一个膜蛤师的自我修养</title>
+<title>如何在Windows下使用包管理 | 一个膜蛤师的自我修养</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -64,7 +68,7 @@
         fancybox: true,
         animate: true,
         isHome: false,
-        isPost: false,
+        isPost: true,
         isArchive: false,
         isTag: false,
         isCategory: false,
@@ -254,11 +258,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-如何在windows下使用包管理" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/about/index.html" class="article-date">
-      <time datetime="2016-07-05T11:42:04.000Z" itemprop="datePublished">2016-07-05</time>
+      <a href="/2016/07/12/如何在windows下使用包管理/" class="article-date">
+      <time datetime="2016-07-11T16:00:00.000Z" itemprop="datePublished">2016-07-12</time>
 </a>
 
 
@@ -273,7 +277,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      about
+      如何在Windows下使用包管理
     </h1>
   
 
@@ -283,6 +287,10 @@
         
 
         
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tools/">tools</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/windows/">windows</a></li></ul>
+    </div>
+
         <div class="clearfix"></div>
       </div>
       
@@ -290,36 +298,91 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <style>
-    .article-meta { display: none; }
-    #container .article .article-title { padding-right: 0; }
-    .article-header {
-        padding: 0;
-        padding-top: 26px;
-        border-left: none;
-        text-align: center;
-    }
-    .article-header:hover { border-left: none; }
-    .article-title { font-size: 1.6em }
-    .article-entry hr { margin: 0;}
-    .article-meta,
-    #container .article-info-post.article-info { display: none;}
-    #container .article .article-title { padding: 0; }
-</style>
+        <p>每次安装系统都需要安装很多软件，Git，Node，Python，Ruby,Atom,JDK..有些软件是你要直接用的，有些是其它软件所依赖的。安装这些东西，你得先找到它们的官方网站，然后下载适合自己系统的版本，双击安装，Next，Next，下一步，下一步  …  完成！安装完以后，你发现还不能用，因为你不知道这个软件还需要你去安装一个其它的东西。今天来介绍一个Windows下的包管理工具.（Package Manager）<br>Chocolatey官网: <a href="https://chocolatey.org/" target="_blank" rel="external">The package manager for Windows</a></p>
+<a id="more"></a>
+<h3 id="包管理工具是什么"><a href="#包管理工具是什么" class="headerlink" title="包管理工具是什么"></a>包管理工具是什么</h3><p>包管理工具，可以让我们用几个简单的命令去安装，升级，还有删除软件，并且它会自动给我们解决软件之间的依赖的问题。</p>
+<p>这里说的包管理工具是指操作系统的包管理工具,也就是管理安装到操作系统上的软件的工具..Windows用户可以用<code>Chocolatey</code>,Mac用户可以用<code>Homebrew</code></p>
+<p>还有项目级别的包管理工具,比如前端的<code>npm</code>,<code>Bower</code>…</p>
+<p>安装Chocolatey步骤移步官方文档</p>
+<blockquote>
+<p><a href="https://chocolatey.org/install" target="_blank" rel="external">Installing Chocolatey</a></p>
+<blockquote>
+<p><strong>注意,</strong>在Windows10下没有在<strong>超级管理员</strong>权限下使用CMD的话,安装会报错</p>
+<h3 id="如果被伟光正的墙堵了-参考下面"><a href="#如果被伟光正的墙堵了-参考下面" class="headerlink" title="如果被伟光正的墙堵了,参考下面"></a>如果被伟光正的墙堵了,参考下面</h3></blockquote>
+</blockquote>
+<p>使用Proxifier将SHadowsocks的代理映射到全局</p>
+<blockquote>
+<p>下载地址:<a href="https://www.proxifier.com/" target="_blank" rel="external">Proxifier</a></p>
+</blockquote>
+<p>profile-Proxy servers<br><img src="https://cloud.githubusercontent.com/assets/7511631/19415633/ac5943c4-93a8-11e6-9e65-2f3be018d29f.png" alt="image"></p>
+<p>配置完了点击Check,如果没问题,就会显示<br><img src="https://cloud.githubusercontent.com/assets/7511631/19415641/ec334364-93a8-11e6-9bb2-5ed2ca5d905c.png" alt="image"></p>
+<h3 id="尝试安装下Python"><a href="#尝试安装下Python" class="headerlink" title="尝试安装下Python"></a>尝试安装下Python</h3><p>在<code>windows cmd</code> 下输入 <code>choco install python2</code><br>默认安装在<code>C:\tools\</code>下,安装成功后会自动帮你配置环境变量,重启命令行窗口就可生效<br><img src="https://cloud.githubusercontent.com/assets/7511631/19415657/821d8240-93a9-11e6-9bca-a5de94604649.png" alt="image"></p>
 
-
-          
-        
       
     </div>
     
   </div>
   
     
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2016/07/12/如何在windows下使用包管理/">如何在Windows下使用包管理</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">John Trump</a></p>
+        <p><span>发布时间:</span>2016-07-12, 00:00:00</p>
+        <p><span>最后更新:</span>2016-11-15, 22:18:43</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2016/07/12/如何在windows下使用包管理/" title="如何在Windows下使用包管理">http://yoursite.com/2016/07/12/如何在windows下使用包管理/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/07/12/如何在windows下使用包管理/　　作者: John Trump" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
 
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2016/07/22/css-sass-introduction/">
+                    Sass简单入门
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2016/07/01/css-priority/">
+                    CSS样式的优先级
+                </a>
+            </div>
+        
+    </nav>
 
   
 </article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#包管理工具是什么"><span class="toc-number">1.</span> <span class="toc-text">包管理工具是什么</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#如果被伟光正的墙堵了-参考下面"><span class="toc-number">2.</span> <span class="toc-text">如果被伟光正的墙堵了,参考下面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#尝试安装下Python"><span class="toc-number">3.</span> <span class="toc-text">尝试安装下Python</span></a></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"true"];
+    </script>
 
 
 
@@ -337,7 +400,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"about　| 一个膜蛤师的自我修养　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"如何在Windows下使用包管理　| 一个膜蛤师的自我修养　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -353,7 +416,7 @@
     
       <div class="duoshuo" id="comments">
     <div id="comment-box" ></div>
-    <div class="ds-thread" id="ds-thread" data-thread-key="about/index.html" data-title="about" data-url="http://yoursite.com/about/index.html"></div>
+    <div class="ds-thread" id="ds-thread" data-thread-key="2016/07/12/如何在windows下使用包管理/" data-title="如何在Windows下使用包管理" data-url="http://yoursite.com/2016/07/12/如何在windows下使用包管理/"></div>
     <script>
         var duoshuoQuery = {short_name:"johntrump"};
         var loadComment = function(){
@@ -371,6 +434,26 @@
 </div>
     
 
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2016/07/22/css-sass-introduction/" title="上一篇: Sass简单入门">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2016/07/01/css-priority/" title="下一篇: CSS样式的优先级">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/11/10/browser-cross/">浏览器跨域策略</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/29/Macbook Pro Retina休眠耗电现象修复/">MacBook Pro Retina 睡眠耗电现象修复</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/01/unified-wrap/">统一换行符</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/28/如何解决atom无法安装package的问题/">如何解决atom无法安装package的问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/22/css-sass-introduction/">Sass简单入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/12/如何在windows下使用包管理/">如何在Windows下使用包管理</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/01/css-priority/">CSS样式的优先级</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/22/如果在Hexo中添加README到github/">如何在Hexo中添加README到github</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/20/hello-world/">Hello World</a></li></ul>
 
 
 

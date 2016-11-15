@@ -15,16 +15,22 @@
 
 
 
-<meta name="description" content="一个程序员的自我修养之路">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+<meta name="description" content="概念浏览器通过优先级来判断哪一些属性值与一个元素最为相关从而在该元素上应用这些属性值当优先级与多个CSS声明中任意一个声明的优先级相等的时候,最后一个声明会应用在元素上,这就是CSS样式的优先级
+
+要注意的是元素在文档中的位置并不会影响到优先级">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS样式的优先级">
+<meta property="og:url" content="http://yoursite.com/2016/07/01/css-priority/index.html">
 <meta property="og:site_name" content="一个膜蛤师的自我修养">
-<meta property="og:description" content="一个程序员的自我修养之路">
-<meta property="og:updated_time" content="2016-11-04T02:00:44.000Z">
+<meta property="og:description" content="概念浏览器通过优先级来判断哪一些属性值与一个元素最为相关从而在该元素上应用这些属性值当优先级与多个CSS声明中任意一个声明的优先级相等的时候,最后一个声明会应用在元素上,这就是CSS样式的优先级
+
+要注意的是元素在文档中的位置并不会影响到优先级">
+<meta property="og:updated_time" content="2016-11-15T14:28:34.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="一个程序员的自我修养之路">
+<meta name="twitter:title" content="CSS样式的优先级">
+<meta name="twitter:description" content="概念浏览器通过优先级来判断哪一些属性值与一个元素最为相关从而在该元素上应用这些属性值当优先级与多个CSS声明中任意一个声明的优先级相等的时候,最后一个声明会应用在元素上,这就是CSS样式的优先级
+
+要注意的是元素在文档中的位置并不会影响到优先级">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -54,7 +60,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>about | 一个膜蛤师的自我修养</title>
+<title>CSS样式的优先级 | 一个膜蛤师的自我修养</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -64,7 +70,7 @@
         fancybox: true,
         animate: true,
         isHome: false,
-        isPost: false,
+        isPost: true,
         isArchive: false,
         isTag: false,
         isCategory: false,
@@ -254,11 +260,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-css-priority" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/about/index.html" class="article-date">
-      <time datetime="2016-07-05T11:42:04.000Z" itemprop="datePublished">2016-07-05</time>
+      <a href="/2016/07/01/css-priority/" class="article-date">
+      <time datetime="2016-06-30T16:00:00.000Z" itemprop="datePublished">2016-07-01</time>
 </a>
 
 
@@ -273,7 +279,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      about
+      CSS样式的优先级
     </h1>
   
 
@@ -283,6 +289,10 @@
         
 
         
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li></ul>
+    </div>
+
         <div class="clearfix"></div>
       </div>
       
@@ -290,36 +300,103 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <style>
-    .article-meta { display: none; }
-    #container .article .article-title { padding-right: 0; }
-    .article-header {
-        padding: 0;
-        padding-top: 26px;
-        border-left: none;
-        text-align: center;
-    }
-    .article-header:hover { border-left: none; }
-    .article-title { font-size: 1.6em }
-    .article-entry hr { margin: 0;}
-    .article-meta,
-    #container .article-info-post.article-info { display: none;}
-    #container .article .article-title { padding: 0; }
-</style>
+        <h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><p>浏览器通过优先级来判断哪一些属性值与一个元素最为相关从而在该元素上应用这些属性值<br>当优先级与多个CSS声明中任意一个声明的优先级相等的时候,<strong>最后一个声明</strong>会应用在元素上,这就是CSS样式的优先级</p>
+<blockquote>
+<p>要注意的是元素在文档中的位置并不会影响到优先级</p>
+</blockquote>
+<a id="more"></a>
+<h2 id="CSS样式的优先级逐渐增加的顺序"><a href="#CSS样式的优先级逐渐增加的顺序" class="headerlink" title="CSS样式的优先级逐渐增加的顺序"></a>CSS样式的优先级逐渐增加的顺序</h2><ol>
+<li>通用选择器 <code>*</code></li>
+<li>元素选择器 <code>p</code></li>
+<li>类选择器 <code>.class</code></li>
+<li>属性选择器 <code>[type=&#39;sometype&#39;]</code></li>
+<li>伪类选择器 <code>a:hover</code></li>
+<li>ID选择器 <code>#id</code></li>
+<li>内联样式 <code>style=&#39;style_type&#39;</code></li>
+</ol>
+<h2 id="important-规则"><a href="#important-规则" class="headerlink" title="!important 规则"></a><code>!important</code> 规则</h2><p>当一个样式声明上使用 <code>!important</code> 规则，可以覆盖CSS样式中的任何其他的声明。使用<code>!important</code> 是一个坏习惯，应该尽量避免，因为这会<em>打断样式表固有联级规则</em>，使得调试变得更加困难。</p>
+<blockquote>
+<p>当两条互相冲突的<code>!important</code>规则声明被应用到同一个相同的元素的时候,拥有更大优先级的声明会被调用</p>
+</blockquote>
+<h2 id="网上给的经验法则"><a href="#网上给的经验法则" class="headerlink" title="网上给的经验法则"></a>网上给的经验法则</h2><ul>
+<li>Never 永远不要在全站范围的 css 上使用 <code>!important</code></li>
+<li>Only 只在需要覆盖全站或外部 css（例如引用的 ExtJs 或者 YUI ）的特定页面中使用   <code>!important</code></li>
+<li>Never 永远不要在你的插件中使用 <code>!important</code></li>
+<li>Always 要优化考虑使用样式规则的优先级来解决问题而不是 <code>!important</code></li>
+</ul>
+<h3 id="你可以"><a href="#你可以" class="headerlink" title="你可以:"></a>你可以:</h3><ol>
+<li>善用CSS的级联属性</li>
+<li>使用更多具体的规则，使选择的范围缩小，这样的选择器会更具有针对性，从而提高优先级</li>
+</ol>
+<h3 id="小例子："><a href="#小例子：" class="headerlink" title="小例子："></a>小例子：</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"test"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">span</span>&gt;</span>Text<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#test</span> <span class="selector-tag">span</span>&#123;<span class="attribute">color</span>:green&#125;</div><div class="line"><span class="selector-tag">div</span> <span class="selector-tag">span</span>&#123;<span class="attribute">color</span>:blue&#125;</div><div class="line"><span class="selector-tag">span</span>&#123;<span class="attribute">color</span>:red&#125;</div></pre></td></tr></table></figure>
+<p>无论顺序如何，最后文本的颜色都会是green的。blue总会覆盖掉red，再被green覆盖掉，因为他们的优先级顺序从上到下递减</p>
 
-
-          
-        
       
     </div>
     
   </div>
   
     
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2016/07/01/css-priority/">CSS样式的优先级</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">John Trump</a></p>
+        <p><span>发布时间:</span>2016-07-01, 00:00:00</p>
+        <p><span>最后更新:</span>2016-11-15, 22:28:34</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2016/07/01/css-priority/" title="CSS样式的优先级">http://yoursite.com/2016/07/01/css-priority/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/07/01/css-priority/　　作者: John Trump" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
 
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2016/07/12/如何在windows下使用包管理/">
+                    如何在Windows下使用包管理
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2016/05/22/如果在Hexo中添加README到github/">
+                    如何在Hexo中添加README到github
+                </a>
+            </div>
+        
+    </nav>
 
   
 </article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#概念"><span class="toc-number">1.</span> <span class="toc-text">概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS样式的优先级逐渐增加的顺序"><span class="toc-number">2.</span> <span class="toc-text">CSS样式的优先级逐渐增加的顺序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#important-规则"><span class="toc-number">3.</span> <span class="toc-text">!important 规则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#网上给的经验法则"><span class="toc-number">4.</span> <span class="toc-text">网上给的经验法则</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#你可以"><span class="toc-number">4.1.</span> <span class="toc-text">你可以:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#小例子："><span class="toc-number">4.2.</span> <span class="toc-text">小例子：</span></a></li></ol></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"true"];
+    </script>
 
 
 
@@ -337,7 +414,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"about　| 一个膜蛤师的自我修养　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"CSS样式的优先级　| 一个膜蛤师的自我修养　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -353,7 +430,7 @@
     
       <div class="duoshuo" id="comments">
     <div id="comment-box" ></div>
-    <div class="ds-thread" id="ds-thread" data-thread-key="about/index.html" data-title="about" data-url="http://yoursite.com/about/index.html"></div>
+    <div class="ds-thread" id="ds-thread" data-thread-key="2016/07/01/css-priority/" data-title="CSS样式的优先级" data-url="http://yoursite.com/2016/07/01/css-priority/"></div>
     <script>
         var duoshuoQuery = {short_name:"johntrump"};
         var loadComment = function(){
@@ -371,6 +448,26 @@
 </div>
     
 
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2016/07/12/如何在windows下使用包管理/" title="上一篇: 如何在Windows下使用包管理">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2016/05/22/如果在Hexo中添加README到github/" title="下一篇: 如何在Hexo中添加README到github">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/11/10/browser-cross/">浏览器跨域策略</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/29/Macbook Pro Retina休眠耗电现象修复/">MacBook Pro Retina 睡眠耗电现象修复</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/01/unified-wrap/">统一换行符</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/28/如何解决atom无法安装package的问题/">如何解决atom无法安装package的问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/22/css-sass-introduction/">Sass简单入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/12/如何在windows下使用包管理/">如何在Windows下使用包管理</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/01/css-priority/">CSS样式的优先级</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/22/如果在Hexo中添加README到github/">如何在Hexo中添加README到github</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/20/hello-world/">Hello World</a></li></ul>
 
 
 

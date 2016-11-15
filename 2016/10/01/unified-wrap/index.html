@@ -15,16 +15,16 @@
 
 
 
-<meta name="description" content="一个程序员的自我修养之路">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+<meta name="description" content="项目团队里用不同的操作系统平台开发同一个软件,会出现换行符不一致的情况,搞不好就会导致莫名其妙的bug出现.所以,统一一套换行符是很重要的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="统一换行符">
+<meta property="og:url" content="http://yoursite.com/2016/10/01/unified-wrap/index.html">
 <meta property="og:site_name" content="一个膜蛤师的自我修养">
-<meta property="og:description" content="一个程序员的自我修养之路">
-<meta property="og:updated_time" content="2016-11-04T02:00:44.000Z">
+<meta property="og:description" content="项目团队里用不同的操作系统平台开发同一个软件,会出现换行符不一致的情况,搞不好就会导致莫名其妙的bug出现.所以,统一一套换行符是很重要的">
+<meta property="og:updated_time" content="2016-11-15T14:30:27.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="一个程序员的自我修养之路">
+<meta name="twitter:title" content="统一换行符">
+<meta name="twitter:description" content="项目团队里用不同的操作系统平台开发同一个软件,会出现换行符不一致的情况,搞不好就会导致莫名其妙的bug出现.所以,统一一套换行符是很重要的">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -54,7 +54,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>about | 一个膜蛤师的自我修养</title>
+<title>统一换行符 | 一个膜蛤师的自我修养</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -64,7 +64,7 @@
         fancybox: true,
         animate: true,
         isHome: false,
-        isPost: false,
+        isPost: true,
         isArchive: false,
         isTag: false,
         isCategory: false,
@@ -254,11 +254,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-unified-wrap" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/about/index.html" class="article-date">
-      <time datetime="2016-07-05T11:42:04.000Z" itemprop="datePublished">2016-07-05</time>
+      <a href="/2016/10/01/unified-wrap/" class="article-date">
+      <time datetime="2016-09-30T16:00:00.000Z" itemprop="datePublished">2016-10-01</time>
 </a>
 
 
@@ -273,7 +273,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      about
+      统一换行符
     </h1>
   
 
@@ -283,6 +283,10 @@
         
 
         
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/项目管理/">项目管理</a></li></ul>
+    </div>
+
         <div class="clearfix"></div>
       </div>
       
@@ -290,36 +294,83 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <style>
-    .article-meta { display: none; }
-    #container .article .article-title { padding-right: 0; }
-    .article-header {
-        padding: 0;
-        padding-top: 26px;
-        border-left: none;
-        text-align: center;
-    }
-    .article-header:hover { border-left: none; }
-    .article-title { font-size: 1.6em }
-    .article-entry hr { margin: 0;}
-    .article-meta,
-    #container .article-info-post.article-info { display: none;}
-    #container .article .article-title { padding: 0; }
-</style>
+        <p>项目团队里用不同的操作系统平台开发同一个软件,会出现换行符不一致的情况,搞不好就会导致莫名其妙的bug出现.所以,统一一套换行符是很重要的<br><a id="more"></a></p>
+<h1 id="统一换行符"><a href="#统一换行符" class="headerlink" title="统一换行符"></a>统一换行符</h1><p>在Unix和类Unix系统中,使用<code>\n</code>来表示换行符</p>
+<p>在dos和Windows中使用<code>\r\n</code>来表示换行符</p>
+<p>还有一个早期的Mac系统,最为奇葩,是用<code>\r</code>来表示</p>
+<blockquote>
+<p>导致的结果是,如果Unix系统下的文件在Windows里打开,所有文字都会变成一行,而Windows里的文件在Unix下打开,所有行的结尾多了个<code>^M</code></p>
+</blockquote>
+<h2 id="环境的设定"><a href="#环境的设定" class="headerlink" title="环境的设定"></a>环境的设定</h2><h4 id="Sublime"><a href="#Sublime" class="headerlink" title="Sublime"></a>Sublime</h4><p>在Preference-&gt;Setting-User中加入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&quot;default_line_ending&quot;: &quot;unix&quot;,//Unix风格换行符为准</div><div class="line">&quot;show_line_endings&quot;: true,//在底部显示文件采用的换行符</div></pre></td></tr></table></figure>
+<h4 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h4><p>在终端中输入<code>git config --global core.autocrlf false</code></p>
+<h4 id="VIM"><a href="#VIM" class="headerlink" title="VIM"></a>VIM</h4><p>在<code>~/.vimrc</code>中添加<code>set ffs=unix,dos</code>,以后创建的文件都是<code>\n</code>风格的换行符了</p>
 
-
-          
-        
       
     </div>
     
   </div>
   
     
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2016/10/01/unified-wrap/">统一换行符</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">John Trump</a></p>
+        <p><span>发布时间:</span>2016-10-01, 00:00:00</p>
+        <p><span>最后更新:</span>2016-11-15, 22:30:27</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2016/10/01/unified-wrap/" title="统一换行符">http://yoursite.com/2016/10/01/unified-wrap/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/10/01/unified-wrap/　　作者: John Trump" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
 
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2016/10/29/Macbook Pro Retina休眠耗电现象修复/">
+                    MacBook Pro Retina 睡眠耗电现象修复
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2016/07/28/如何解决atom无法安装package的问题/">
+                    如何解决atom无法安装package的问题
+                </a>
+            </div>
+        
+    </nav>
 
   
 </article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#统一换行符"><span class="toc-number">1.</span> <span class="toc-text">统一换行符</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#环境的设定"><span class="toc-number">1.1.</span> <span class="toc-text">环境的设定</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Sublime"><span class="toc-number">1.1.0.1.</span> <span class="toc-text">Sublime</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Git"><span class="toc-number">1.1.0.2.</span> <span class="toc-text">Git</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#VIM"><span class="toc-number">1.1.0.3.</span> <span class="toc-text">VIM</span></a></li></ol></li></ol></li></ol></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"true"];
+    </script>
 
 
 
@@ -337,7 +388,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"about　| 一个膜蛤师的自我修养　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"统一换行符　| 一个膜蛤师的自我修养　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -353,7 +404,7 @@
     
       <div class="duoshuo" id="comments">
     <div id="comment-box" ></div>
-    <div class="ds-thread" id="ds-thread" data-thread-key="about/index.html" data-title="about" data-url="http://yoursite.com/about/index.html"></div>
+    <div class="ds-thread" id="ds-thread" data-thread-key="2016/10/01/unified-wrap/" data-title="统一换行符" data-url="http://yoursite.com/2016/10/01/unified-wrap/"></div>
     <script>
         var duoshuoQuery = {short_name:"johntrump"};
         var loadComment = function(){
@@ -371,6 +422,26 @@
 </div>
     
 
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2016/10/29/Macbook Pro Retina休眠耗电现象修复/" title="上一篇: MacBook Pro Retina 睡眠耗电现象修复">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2016/07/28/如何解决atom无法安装package的问题/" title="下一篇: 如何解决atom无法安装package的问题">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/11/10/browser-cross/">浏览器跨域策略</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/29/Macbook Pro Retina休眠耗电现象修复/">MacBook Pro Retina 睡眠耗电现象修复</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/01/unified-wrap/">统一换行符</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/28/如何解决atom无法安装package的问题/">如何解决atom无法安装package的问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/22/css-sass-introduction/">Sass简单入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/12/如何在windows下使用包管理/">如何在Windows下使用包管理</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/01/css-priority/">CSS样式的优先级</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/22/如果在Hexo中添加README到github/">如何在Hexo中添加README到github</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/20/hello-world/">Hello World</a></li></ul>
 
 
 

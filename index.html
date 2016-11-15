@@ -163,10 +163,6 @@
                         
                             <li><a href="/archives/">所有文章</a></li>
                         
-                            <li><a href="/tags/编程">编程</a></li>
-                        
-                            <li><a href="/tags/杂谈">杂谈</a></li>
-                        
                         </ul>
                     </nav>
                     <nav class="header-nav">
@@ -187,7 +183,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/工具/">工具</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/杂谈/">杂谈</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/爬坑记录/">爬坑记录</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/编程/">编程</a></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/">Mac</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/atom/">atom</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sass/">sass</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tools/">tools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows/">windows</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/前端/">前端</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/杂谈/">杂谈</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/浏览器/">浏览器</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/项目管理/">项目管理</a></li></ul>
                     </div>
                 </section>
                 
@@ -210,7 +206,7 @@
                 
                 <section class="switch-part switch-part4">
                 
-                    <div id="js-aboutme">面向对象面向君，不负代码不负卿。一个广泛涉猎无一精通乱点技能树的低级程序猿。</div>
+                    <div id="js-aboutme">保持好奇,虚心接纳</div>
                 </section>
                 
             </div>
@@ -242,10 +238,6 @@
                 
                     <li><a href="/archives/">所有文章</a></li>
                 
-                    <li><a href="/tags/编程">编程</a></li>
-                
-                    <li><a href="/tags/杂谈">杂谈</a></li>
-                
                 <div class="clearfix"></div>
                 </ul>
             </nav>
@@ -271,16 +263,16 @@
     <article id="post-browser-cross" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/11/04/browser-cross/" class="article-date">
-      <time datetime="2016-11-04T15:52:16.000Z" itemprop="datePublished">2016-11-04</time>
+      <a href="/2016/11/10/browser-cross/" class="article-date">
+      <time datetime="2016-11-09T16:00:00.000Z" itemprop="datePublished">2016-11-10</time>
 </a>
 
  
-    <a href="/2016/11/04/browser-cross/#comments" title="查看评论">
+    <a href="/2016/11/10/browser-cross/#comments" title="查看评论">
         <i class="fa fa-comments-o" aria-hidden="true"></i>
         <span class="count-comment"></span>
         
-            <span class="ds-thread-count"  data-thread-key="2016/11/04/browser-cross/" ></span>
+            <span class="ds-thread-count"  data-thread-key="2016/11/10/browser-cross/" ></span>
         
         
     </a>
@@ -292,83 +284,22 @@
       <input type="hidden" class="isFancy" />
     
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/10/browser-cross/">浏览器跨域策略</a>
+    </h1>
+  
+
+      </header>
+      
+    
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h1 id="浏览器跨域策略"><a href="#浏览器跨域策略" class="headerlink" title="浏览器跨域策略"></a>浏览器跨域策略</h1><p>同一个域名下的 允许通信:<a href="http://www.baidu.com/a.js" target="_blank" rel="external">http://www.baidu.com/a.js</a> <a href="http://www.baidu.com/b.js" target="_blank" rel="external">http://www.baidu.com/b.js</a></p>
-<p>同一个域名下的不同文件夹 允许通信:<a href="http://www.baidu.com/a.js" target="_blank" rel="external">http://www.baidu.com/a.js</a> <a href="http://www.baidu.com/src/b.js" target="_blank" rel="external">http://www.baidu.com/src/b.js</a></p>
-<p>同一个域名的不同端口 不允许通信:<a href="http://www.baidu.com/a.js" target="_blank" rel="external">http://www.baidu.com/a.js</a> <a href="http://www.baidu.com:8080/b.js" target="_blank" rel="external">http://www.baidu.com:8080/b.js</a></p>
-<p>域名对应IP的 不允许通信:<a href="http://www.baidu.com/a.js" target="_blank" rel="external">http://www.baidu.com/a.js</a> <a href="http://192.168.1.1/a.js" target="_blank" rel="external">http://192.168.1.1/a.js</a></p>
-<p>主域名相同 子域不同 不允许通信:<a href="http://www.baidu.com/a.js" target="_blank" rel="external">http://www.baidu.com/a.js</a> <a href="http://script.baidu.com/a.js" target="_blank" rel="external">http://script.baidu.com/a.js</a></p>
-<p>不同域名 不允许通信:<a href="http://www.baidu.com/a.js" target="_blank" rel="external">http://www.baidu.com/a.js</a> <a href="http://www.google.com.hk/b.js" target="_blank" rel="external">http://www.google.com.hk/b.js</a></p>
-<p>如果是因为协议和端口导致的跨域问题,前端是<strong>无能为力的</strong><br>在跨域问题上,域只会通过URL首部来判断,而不会判断两个域是否对应相同的ip上</p>
-<h2 id="跨域的几种办法"><a href="#跨域的几种办法" class="headerlink" title="跨域的几种办法"></a>跨域的几种办法</h2><p>跨域的解决办法有分为<strong>前端办法与后端办法</strong></p>
-<h3 id="通过document-domain来跨域"><a href="#通过document-domain来跨域" class="headerlink" title="通过document.domain来跨域"></a>通过document.domain来跨域</h3><p>浏览器的同源策略其中之一是不能通过ajax的方法去请求不同源中的文档<br>另外一个限制是限制浏览器不同域的框架之间的交互<br>例如有一个页面,地址是<code>http://www.baidu.com/a.html</code>里面的页面有一个iframe,指向<code>http;//baidu.com/b.html</code>,显然两个框架是属于不同域的,所以我们<strong>无法通过在页面中书写js代码来获取iframe中的内容</strong></p>
-<p><code>a.html url:http://www.baidu.com/a.html</code></p>
-<p><code>b.html url:http://baidu.com/b.html</code></p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;script type="text/javascript"&gt;</div><div class="line">    function test()&#123;</div><div class="line">        var iframe = document.getElementById('iframe');</div><div class="line">        var win = iframe.contentWindows;//这里可以去得到另外一个不同域的iframe的window对象,但是这个对象的属性和方法基本上是取不到的</div><div class="line">        var doc = win.document;//error</div><div class="line">        var name = win.name;//error</div><div class="line">    &#125;</div><div class="line">&lt;/script&gt;</div><div class="line">&lt;iframe id = "iframe" src = "http://baidu.com/b.html" onload = "test()"&gt;&lt;/iframe&gt;</div></pre></td></tr></table></figure>
-<p>此时,如果我们要突破这个限制,可以将其中一个iframe的domain设置为相同的域,注意<strong>document.domain的设置是有限制的</strong>,我们只能将<strong>document.domain设置为自身或更高一级的父域,并且主域是要相同的</strong></p>
-<ul>
-<li><p>在页面<code>http://www.baidu.com/a.html</code>中设置document.domain为<code>baidu.com</code>,也就是<strong>主域</strong></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;iframe id = <span class="string">"iframe"</span> src=<span class="string">"http://baidu.com/b.html"</span> onload = <span class="string">"test()"</span>&gt;&lt;/iframe&gt;</div><div class="line">&lt;script type=<span class="string">"text/javascript"</span>&gt;</div><div class="line">    <span class="built_in">document</span>.domain = <span class="string">'baidu.com'</span>;<span class="comment">//设置成主域</span></div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>)</span>&#123;</div><div class="line">        alert(<span class="built_in">document</span>.getElementById(<span class="string">'￼iframe'</span>).contentWindow);<span class="comment">//contentWindow 可取得子窗口的 window 对象</span></div><div class="line">    &#125;</div><div class="line">&lt;<span class="regexp">/script&gt;</span></div></pre></td></tr></table></figure>
-</li>
-<li><p>在页面<code>http://baidu.com/b.html</code>中也设置document.domain为主域</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;script type=<span class="string">"text/javascript"</span>&gt;</div><div class="line">  <span class="built_in">document</span>.domain = <span class="string">'baidu.com'</span>;<span class="comment">//在iframe载入这个页面也设置document.domain，使之与主页面的document.domain相同</span></div><div class="line">&lt;<span class="regexp">/script&gt;</span></div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="通过location-hash跨域-–锚点技术"><a href="#通过location-hash跨域-–锚点技术" class="headerlink" title="通过location.hash跨域 –锚点技术"></a>通过location.hash跨域 –锚点技术</h3><p>原理:通过改变URL的hash部分来进行双向通信,每个window通过修改其他window的location来发送消息.</p>
-<blockquote>
-<p><strong>需要注意的:</strong>IE和Chrome浏览器不允许修改parent.location.hash的值,需要借助父窗口域名下的一个代理iframe</p>
-</blockquote>
-<p>例如,父页面<code>baidu.com/a.html</code> iframe嵌入的页面是<code>google.com/b.html</code><br>要实现两个页面的双向通信可以通过:</p>
-<ul>
-<li><p>a.html传递数据到b.html</p>
-<ul>
-<li>a.html修改iframe的src为<code>google.com/b.html#paco</code></li>
-<li>b.html监听到url的变化,触发对应的操作</li>
-</ul>
-</li>
-<li><p>b.html传递数据到a.html</p>
-<ul>
-<li>首先先在b.html下创建一个隐藏的iframe,此iframe时baidu.com域下的,并且挂上需要传递的hash数据</li>
-<li>proxy.html监听到url的变化,修改a.html的url值,<strong>因为a.html与proxy.html是同域的,所以可以修改</strong></li>
-<li>a.html监听到url的变化,触发对应的操作</li>
-</ul>
-</li>
-</ul>
-<p>b页面的关键代码</p>
- <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">try</span> &#123;</div><div class="line">   parent.location.hash = <span class="string">'data'</span>;  </div><div class="line">&#125; <span class="keyword">catch</span> (e) &#123;  </div><div class="line">   <span class="comment">// ie、chrome的安全机制无法修改parent.location.hash，  </span></div><div class="line">   <span class="keyword">var</span> ifrproxy = <span class="built_in">document</span>.createElement(<span class="string">'iframe'</span>);  </div><div class="line">   ifrproxy.style.display = <span class="string">'none'</span>;  </div><div class="line">   ifrproxy.src = <span class="string">"http://www.baidu.com/proxy.html#data"</span>;  </div><div class="line">   <span class="built_in">document</span>.body.appendChild(ifrproxy);  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p> proxy.html的关键代码</p>
- <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"> <span class="comment">//因为parent.parent（即baidu.com/a.html）和baidu.com/proxy.html属于同一个域，所以可以改变其location.hash的值  </span></div><div class="line">parent.parent.location.hash = self.location.hash.substring(<span class="number">1</span>);</div></pre></td></tr></table></figure>
-<h3 id="使用有src的标签"><a href="#使用有src的标签" class="headerlink" title="使用有src的标签"></a>使用有src的标签</h3><p>原理:所有具有src的属性的标签都是可以跨域的,包括<code>img``script</code></p>
-<p>限制: 需要创建一个DOM对象,<strong>只能用于GET方法</strong></p>
-<p>不同的标签发送http请求的时机是不一样的</p>
-<p><code>img</code>标签在更改src属性的时候就会发送请求,但是<code>script</code>和<code>iframe</code>只有在添加到DOM树之后才会发送http请求</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var img = new Image();</div><div class="line">img.src = 'http://some/picture';        // 发送HTTP请求</div><div class="line"></div><div class="line">var ifr = $('<span class="tag">&lt;<span class="name">iframe</span>&gt;</span>', &#123;src: 'http://b.a.com/bar'&#125;);</div><div class="line">$('body').append(ifr);                  // 发送HTTP请求</div></pre></td></tr></table></figure>
-<h3 id="JSONP"><a href="#JSONP" class="headerlink" title="JSONP"></a>JSONP</h3><p>原理:<code>&lt;script&gt;</code>是可以跨域的,并且跨域的脚本中可以直接回调我们定义的<code>url参数中制定的函数</code></p>
-<p>限制:<strong>只能用于GET方法</strong></p>
-<p>例如,有一个a.html页面,里面的代码需用利用ajax来获取不同域下的json数据,假设这个json数据的地址是<code>http://example.com/data.php</code>,那么在a页面下的代码可以是:</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">dosomething</span>(<span class="params">jsondata</span>)</span>&#123;</div><div class="line">        <span class="comment">//处理json</span></div><div class="line">    &#125;</div><div class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--注意callback--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"http://example.com/data.php?callback=dosomething"</span>&gt;</span><span class="undefined"></span></div></pre></td></tr></table></figure>
-<p>对应的后台接受到这个请求后,进行处理,返回数据,后台放回的一定是一个可以执行的js文件</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span></div><div class="line">  $callback = $_GET[<span class="string">'callback'</span>];<span class="comment">//取得回调的函数名</span></div><div class="line">  $data = <span class="keyword">array</span>(<span class="string">'a'</span>,<span class="string">'b'</span>,<span class="string">'c'</span>);<span class="comment">//要返回的数据</span></div><div class="line">  <span class="keyword">echo</span> $callback.<span class="string">'('</span>.json_encode($data).<span class="string">')'</span>;</div><div class="line"><span class="meta">?&gt;</span></div></pre></td></tr></table></figure>
-<p>最后页面输出的是<br><code>dosomething([&#39;a&#39;,&#39;b&#39;,&#39;c&#39;])</code></p>
-<h4 id="JQuery中有帮我们封装了一个JSONP的方法"><a href="#JQuery中有帮我们封装了一个JSONP的方法" class="headerlink" title="JQuery中有帮我们封装了一个JSONP的方法"></a>JQuery中有帮我们封装了一个JSONP的方法</h4><p>可以免去我们手动插入script标签和定义回调函数,JQuery会自动生成一个全局函数来替换callback后的问号,之后获取到数据后就会销毁,这个方法会<strong>自动判断是否跨域</strong>,如果不跨域的话,就改用普通的ajax方法,如果跨域,就调用jsonp的回调函数</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></div><div class="line">$.getJSON(<span class="string">'http://example.com/data.php?callback=?'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">jsondata</span>)</span>&#123;</div><div class="line">    <span class="comment">//处理json</span></div><div class="line">&#125;);</div><div class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
-<h3 id="navigation对象"><a href="#navigation对象" class="headerlink" title="navigation对象"></a>navigation对象</h3><p>原理:iframe之间共享<code>navigation</code>对象,可以用他来传递数据</p>
-<p>限制:<strong>只用用在IE6/7上</strong></p>
-<p>不做过多介绍</p>
-<h3 id="CORS-跨域资源共享"><a href="#CORS-跨域资源共享" class="headerlink" title="CORS 跨域资源共享"></a>CORS 跨域资源共享</h3><p>原理:服务端通过设置<code>Access-Control-Allow-Origin</code>的HTTP响应头后,浏览器会允许跨域</p>
-<p>限制:<strong>浏览器需要支持HTML5</strong></p>
-<p><strong>因此,实现CORS通信的关键在于服务器,只要服务器实现的CORS的接口,就可以跨源通信</strong></p>
-<p>例如<code>http://a.com</code>要访问<code>http://b.com</code>的数据,这个时候通常会报错,只需要在被访问的<code>http://b.com</code>的服务器中设置<code>Access-Control-Allow-Origin</code>即可<br>允许跨域访问</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Access-Control-Allow-Origin:* //*代表所有的域名</div><div class="line">Access-Control-Allow-Origin: http://a.com #允许这个a.com域名下的访问</div></pre></td></tr></table></figure>
-<h3 id="使用window-postMessage"><a href="#使用window-postMessage" class="headerlink" title="使用window.postMessage"></a>使用window.postMessage</h3><p>原理: HTML5允许窗口之间发送消息</p>
-<p>限制:<strong>需要HTML5的支持</strong>,并且获取窗口句柄后才能互相通信</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//URL:http://a.com/foo</span></div><div class="line"><span class="keyword">var</span> win = <span class="built_in">window</span>.open(<span class="string">'http://b.com/bar'</span>)</div><div class="line">win.postMessage(<span class="string">'Hello world'</span>,<span class="string">'http://b.com'</span>);</div></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//URL://http://b.com/bar</span></div><div class="line"><span class="built_in">window</span>.addEventListener(<span class="string">'message'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">event</span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(event.data)</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>在HTML5之前,JSONP是一个跨域的事实标准,jQuery都给予支持,但是HTML5出现后,最好还是用CORS头和window.postMessage来,从机制上解决跨域的问题。值得注意的是<code>Access-Control-Allow-Origin</code>头字段是资源所在的服务器上设置的,访问控制的责任仍然是资源提供方,这是和JSONP一致的</p>
-<h3 id="相关阅读"><a href="#相关阅读" class="headerlink" title="相关阅读"></a>相关阅读</h3><p><a href="http://www.jianshu.com/p/4edbe294b793" target="_blank" rel="external">js的跨域操作window.name和jsonp</a></p>
-
+              <p>在前端开发中跨域取资源是非常常见的,因为浏览器的保护策略,导致不能直接跨域,必须通过一些方法来实现..解决跨域问题的方法非常多,要根据具体需求来选择.<br>
+          
       
     </div>
     
@@ -377,6 +308,14 @@
       
 
       
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/浏览器/">浏览器</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a href="/2016/11/10/browser-cross/#more">阅读全文 >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
@@ -397,16 +336,16 @@
     <article id="post-Macbook Pro Retina休眠耗电现象修复" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/11/04/Macbook Pro Retina休眠耗电现象修复/" class="article-date">
-      <time datetime="2016-11-04T02:47:37.000Z" itemprop="datePublished">2016-11-04</time>
+      <a href="/2016/10/29/Macbook Pro Retina休眠耗电现象修复/" class="article-date">
+      <time datetime="2016-10-28T16:00:00.000Z" itemprop="datePublished">2016-10-29</time>
 </a>
 
  
-    <a href="/2016/11/04/Macbook Pro Retina休眠耗电现象修复/#comments" title="查看评论">
+    <a href="/2016/10/29/Macbook Pro Retina休眠耗电现象修复/#comments" title="查看评论">
         <i class="fa fa-comments-o" aria-hidden="true"></i>
         <span class="count-comment"></span>
         
-            <span class="ds-thread-count"  data-thread-key="2016/11/04/Macbook Pro Retina休眠耗电现象修复/" ></span>
+            <span class="ds-thread-count"  data-thread-key="2016/10/29/Macbook Pro Retina休眠耗电现象修复/" ></span>
         
         
     </a>
@@ -422,7 +361,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/04/Macbook Pro Retina休眠耗电现象修复/">MacBook Pro Retina 睡眠耗电现象修复</a>
+      <a class="article-title" href="/2016/10/29/Macbook Pro Retina休眠耗电现象修复/">MacBook Pro Retina 睡眠耗电现象修复</a>
     </h1>
   
 
@@ -440,485 +379,15 @@
     <div class="article-info article-info-index">
       
       
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/编程随想/">编程随想</a>
-    </div>
-
 
       
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/爬坑记录/">爬坑记录</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mac/">Mac</a></li></ul>
     </div>
 
       
         <p class="article-more-link">
-          <a href="/2016/11/04/Macbook Pro Retina休眠耗电现象修复/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-如何在windows下使用包管理" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/11/04/如何在windows下使用包管理/" class="article-date">
-      <time datetime="2016-11-04T02:40:07.000Z" itemprop="datePublished">2016-11-04</time>
-</a>
-
- 
-    <a href="/2016/11/04/如何在windows下使用包管理/#comments" title="查看评论">
-        <i class="fa fa-comments-o" aria-hidden="true"></i>
-        <span class="count-comment"></span>
-        
-            <span class="ds-thread-count"  data-thread-key="2016/11/04/如何在windows下使用包管理/" ></span>
-        
-        
-    </a>
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/04/如何在windows下使用包管理/">如何在Windows下使用包管理</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p>每次安装系统都需要安装很多软件，Git，Node，Python，Ruby,Atom,JDK..有些软件是你要直接用的，有些是其它软件所依赖的。安装这些东西，你得先找到它们的官方网站，然后下载适合自己系统的版本，双击安装，Next，Next，下一步，下一步  …  完成！安装完以后，你发现还不能用，因为你不知道这个软件还需要你去安装一个其它的东西。今天来介绍一个Windows下的包管理工具.（Package Manager）<br>Chocolatey官网: <a href="https://chocolatey.org/">The package manager for Windows</a></p>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/编程随想/">编程随想</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/工具/">工具</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2016/11/04/如何在windows下使用包管理/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-css-sass-introduction" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/11/04/css-sass-introduction/" class="article-date">
-      <time datetime="2016-11-04T02:00:44.000Z" itemprop="datePublished">2016-11-04</time>
-</a>
-
- 
-    <a href="/2016/11/04/css-sass-introduction/#comments" title="查看评论">
-        <i class="fa fa-comments-o" aria-hidden="true"></i>
-        <span class="count-comment"></span>
-        
-            <span class="ds-thread-count"  data-thread-key="2016/11/04/css-sass-introduction/" ></span>
-        
-        
-    </a>
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/04/css-sass-introduction/">Sass简单入门</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p>每一次CSS样式写到最后，都是为了实现而实现，感觉非常混乱，我一直都想学一学<strong>CSS预处理器</strong>，把CSS的开发变得更加的简单可维护。<br>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/编程随想/">编程随想</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/编程/">编程</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2016/11/04/css-sass-introduction/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/11/04/hello-world/" class="article-date">
-      <time datetime="2016-11-04T02:00:44.000Z" itemprop="datePublished">2016-11-04</time>
-</a>
-
- 
-    <a href="/2016/11/04/hello-world/#comments" title="查看评论">
-        <i class="fa fa-comments-o" aria-hidden="true"></i>
-        <span class="count-comment"></span>
-        
-            <span class="ds-thread-count"  data-thread-key="2016/11/04/hello-world/" ></span>
-        
-        
-    </a>
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/04/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p>我一直都有写点自己的博客的念头，之前尝试着在<a href="http://www.jianshu.com/users/a176ad7b068b/latest_articles">简书</a>写过几篇。简书的书写体验确实不错，但是身为程序员，个人博客是体现个性的地方，怎么能所有人都是外观一样的，这点使我萌发了自己搭建一个博客的想法。</p>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/编程随想/">编程随想</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/杂谈/">杂谈</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2016/11/04/hello-world/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-css-priority" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/11/04/css-priority/" class="article-date">
-      <time datetime="2016-11-04T02:00:44.000Z" itemprop="datePublished">2016-11-04</time>
-</a>
-
- 
-    <a href="/2016/11/04/css-priority/#comments" title="查看评论">
-        <i class="fa fa-comments-o" aria-hidden="true"></i>
-        <span class="count-comment"></span>
-        
-            <span class="ds-thread-count"  data-thread-key="2016/11/04/css-priority/" ></span>
-        
-        
-    </a>
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/04/css-priority/">CSS样式的优先级</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><p>浏览器通过优先级来判断哪一些属性值与一个元素最为相关从而在该元素上应用这些属性值<br>当优先级与多个CSS声明中任意一个声明的优先级相等的时候,<strong>最后一个声明</strong>会应用在元素上,这就是CSS样式的优先级</p>
-<blockquote>
-<p>要注意的是元素在文档中的位置并不会影响到优先级</p>
-</blockquote>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/编程随想/">编程随想</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/编程/">编程</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2016/11/04/css-priority/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-如何解决atom无法安装package的问题" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/11/04/如何解决atom无法安装package的问题/" class="article-date">
-      <time datetime="2016-11-04T02:00:44.000Z" itemprop="datePublished">2016-11-04</time>
-</a>
-
- 
-    <a href="/2016/11/04/如何解决atom无法安装package的问题/#comments" title="查看评论">
-        <i class="fa fa-comments-o" aria-hidden="true"></i>
-        <span class="count-comment"></span>
-        
-            <span class="ds-thread-count"  data-thread-key="2016/11/04/如何解决atom无法安装package的问题/" ></span>
-        
-        
-    </a>
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/04/如何解决atom无法安装package的问题/">如何解决atom无法安装package的问题</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p>不知道你们有没有遇到类似的情况。 <a href="https://github.com/atom/atom/issues/11080">apm install failed in HTTP 404 error when gyp is downloading node.js with a fresh install atom #11080</a></p>
-<p>使用atom在线安装插件总是失败,之前遇到这个问题我直接用<code>git clone</code>下载插件,然后执行<code>npm install</code>也是可以的。但是不能用到atom的在线安装,总有点不甘。后来查了很多文档，找到了原因……<br>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/编程随想/">编程随想</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/杂谈/">杂谈</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2016/11/04/如何解决atom无法安装package的问题/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-如果在Hexo中添加README到github" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/11/04/如果在Hexo中添加README到github/" class="article-date">
-      <time datetime="2016-11-04T02:00:44.000Z" itemprop="datePublished">2016-11-04</time>
-</a>
-
- 
-    <a href="/2016/11/04/如果在Hexo中添加README到github/#comments" title="查看评论">
-        <i class="fa fa-comments-o" aria-hidden="true"></i>
-        <span class="count-comment"></span>
-        
-            <span class="ds-thread-count"  data-thread-key="2016/11/04/如果在Hexo中添加README到github/" ></span>
-        
-        
-    </a>
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/04/如果在Hexo中添加README到github/">如何在Hexo中添加README到github</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p>hexo会把文件夹的下的markdown文件全部解析成html，github的readme只能支持md格式的。网络上有许多种方法。我解决办法其实很简单。<br>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/编程随想/">编程随想</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/编程/">编程</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2016/11/04/如果在Hexo中添加README到github/#more">阅读全文 >></a>
+          <a href="/2016/10/29/Macbook Pro Retina休眠耗电现象修复/#more">阅读全文 >></a>
         </p>
       
       <div class="clearfix"></div>
@@ -940,16 +409,16 @@
     <article id="post-unified-wrap" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/11/03/unified-wrap/" class="article-date">
-      <time datetime="2016-11-03T05:40:35.000Z" itemprop="datePublished">2016-11-03</time>
+      <a href="/2016/10/01/unified-wrap/" class="article-date">
+      <time datetime="2016-09-30T16:00:00.000Z" itemprop="datePublished">2016-10-01</time>
 </a>
 
  
-    <a href="/2016/11/03/unified-wrap/#comments" title="查看评论">
+    <a href="/2016/10/01/unified-wrap/#comments" title="查看评论">
         <i class="fa fa-comments-o" aria-hidden="true"></i>
         <span class="count-comment"></span>
         
-            <span class="ds-thread-count"  data-thread-key="2016/11/03/unified-wrap/" ></span>
+            <span class="ds-thread-count"  data-thread-key="2016/10/01/unified-wrap/" ></span>
         
         
     </a>
@@ -961,20 +430,22 @@
       <input type="hidden" class="isFancy" />
     
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/10/01/unified-wrap/">统一换行符</a>
+    </h1>
+  
+
+      </header>
+      
+    
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h1 id="统一换行符"><a href="#统一换行符" class="headerlink" title="统一换行符"></a>统一换行符</h1><p>在Unix和类Unix系统中,使用<code>\n</code>来表示换行符</p>
-<p>在dos和Windows中使用<code>\r\n</code>来表示换行符</p>
-<p>还有一个早期的Mac系统,最为奇葩,是用<code>\r</code>来表示</p>
-<blockquote>
-<p>导致的结果是,如果Unix系统下的文件在Windows里打开,所有文字都会变成一行,而Windows里的文件在Unix下打开,所有行的结尾多了个<code>^M</code></p>
-</blockquote>
-<h2 id="环境的设定"><a href="#环境的设定" class="headerlink" title="环境的设定"></a>环境的设定</h2><h4 id="Sublime"><a href="#Sublime" class="headerlink" title="Sublime"></a>Sublime</h4><p>在Preference-&gt;Setting-User中加入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&quot;default_line_ending&quot;: &quot;unix&quot;,//Unix风格换行符为准</div><div class="line">&quot;show_line_endings&quot;: true,//在底部显示文件采用的换行符</div></pre></td></tr></table></figure>
-<h4 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h4><p>在终端中输入<code>git config --global core.autocrlf false</code></p>
-<h4 id="VIM"><a href="#VIM" class="headerlink" title="VIM"></a>VIM</h4><p>在<code>~/.vimrc</code>中添加<code>set ffs=unix,dos</code>,以后创建的文件都是<code>\n</code>风格的换行符了</p>
-
+              <p>项目团队里用不同的操作系统平台开发同一个软件,会出现换行符不一致的情况,搞不好就会导致莫名其妙的bug出现.所以,统一一套换行符是很重要的<br>
+          
       
     </div>
     
@@ -983,6 +454,456 @@
       
 
       
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/项目管理/">项目管理</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a href="/2016/10/01/unified-wrap/#more">阅读全文 >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-如何解决atom无法安装package的问题" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/07/28/如何解决atom无法安装package的问题/" class="article-date">
+      <time datetime="2016-07-27T16:00:00.000Z" itemprop="datePublished">2016-07-28</time>
+</a>
+
+ 
+    <a href="/2016/07/28/如何解决atom无法安装package的问题/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+            <span class="ds-thread-count"  data-thread-key="2016/07/28/如何解决atom无法安装package的问题/" ></span>
+        
+        
+    </a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/07/28/如何解决atom无法安装package的问题/">如何解决atom无法安装package的问题</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <p>不知道你们有没有遇到类似的情况。 <a href="https://github.com/atom/atom/issues/11080">apm install failed in HTTP 404 error when gyp is downloading node.js with a fresh install atom #11080</a></p>
+<p>使用atom在线安装插件总是失败,之前遇到这个问题我直接用<code>git clone</code>下载插件,然后执行<code>npm install</code>也是可以的。但是不能用到atom的在线安装,总有点不甘。后来查了很多文档，找到了原因……<br>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/atom/">atom</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tools/">tools</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a href="/2016/07/28/如何解决atom无法安装package的问题/#more">阅读全文 >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-css-sass-introduction" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/07/22/css-sass-introduction/" class="article-date">
+      <time datetime="2016-07-21T16:00:00.000Z" itemprop="datePublished">2016-07-22</time>
+</a>
+
+ 
+    <a href="/2016/07/22/css-sass-introduction/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+            <span class="ds-thread-count"  data-thread-key="2016/07/22/css-sass-introduction/" ></span>
+        
+        
+    </a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/07/22/css-sass-introduction/">Sass简单入门</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <p>每一次CSS样式写到最后，都是为了实现而实现，感觉非常混乱，我一直都想学一学<strong>CSS预处理器</strong>，把CSS的开发变得更加的简单可维护。<br>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sass/">sass</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a href="/2016/07/22/css-sass-introduction/#more">阅读全文 >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-如何在windows下使用包管理" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/07/12/如何在windows下使用包管理/" class="article-date">
+      <time datetime="2016-07-11T16:00:00.000Z" itemprop="datePublished">2016-07-12</time>
+</a>
+
+ 
+    <a href="/2016/07/12/如何在windows下使用包管理/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+            <span class="ds-thread-count"  data-thread-key="2016/07/12/如何在windows下使用包管理/" ></span>
+        
+        
+    </a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/07/12/如何在windows下使用包管理/">如何在Windows下使用包管理</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <p>每次安装系统都需要安装很多软件，Git，Node，Python，Ruby,Atom,JDK..有些软件是你要直接用的，有些是其它软件所依赖的。安装这些东西，你得先找到它们的官方网站，然后下载适合自己系统的版本，双击安装，Next，Next，下一步，下一步  …  完成！安装完以后，你发现还不能用，因为你不知道这个软件还需要你去安装一个其它的东西。今天来介绍一个Windows下的包管理工具.（Package Manager）<br>Chocolatey官网: <a href="https://chocolatey.org/">The package manager for Windows</a></p>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tools/">tools</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/windows/">windows</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a href="/2016/07/12/如何在windows下使用包管理/#more">阅读全文 >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-css-priority" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/07/01/css-priority/" class="article-date">
+      <time datetime="2016-06-30T16:00:00.000Z" itemprop="datePublished">2016-07-01</time>
+</a>
+
+ 
+    <a href="/2016/07/01/css-priority/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+            <span class="ds-thread-count"  data-thread-key="2016/07/01/css-priority/" ></span>
+        
+        
+    </a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/07/01/css-priority/">CSS样式的优先级</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><p>浏览器通过优先级来判断哪一些属性值与一个元素最为相关从而在该元素上应用这些属性值<br>当优先级与多个CSS声明中任意一个声明的优先级相等的时候,<strong>最后一个声明</strong>会应用在元素上,这就是CSS样式的优先级</p>
+<blockquote>
+<p>要注意的是元素在文档中的位置并不会影响到优先级</p>
+</blockquote>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a href="/2016/07/01/css-priority/#more">阅读全文 >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-如果在Hexo中添加README到github" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/05/22/如果在Hexo中添加README到github/" class="article-date">
+      <time datetime="2016-05-21T16:00:00.000Z" itemprop="datePublished">2016-05-22</time>
+</a>
+
+ 
+    <a href="/2016/05/22/如果在Hexo中添加README到github/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+            <span class="ds-thread-count"  data-thread-key="2016/05/22/如果在Hexo中添加README到github/" ></span>
+        
+        
+    </a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/05/22/如果在Hexo中添加README到github/">如何在Hexo中添加README到github</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <p>hexo会把文件夹的下的markdown文件全部解析成html，github的readme只能支持md格式的。网络上有许多种方法。我解决办法其实很简单。<br>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a href="/2016/05/22/如果在Hexo中添加README到github/#more">阅读全文 >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/05/20/hello-world/" class="article-date">
+      <time datetime="2016-05-19T16:00:00.000Z" itemprop="datePublished">2016-05-20</time>
+</a>
+
+ 
+    <a href="/2016/05/20/hello-world/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+            <span class="ds-thread-count"  data-thread-key="2016/05/20/hello-world/" ></span>
+        
+        
+    </a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/05/20/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <p>我一直都有写点自己的博客的念头，之前尝试着在<a href="http://www.jianshu.com/users/a176ad7b068b/latest_articles">简书</a>写过几篇。简书的书写体验确实不错，但是身为程序员，个人博客是体现个性的地方，怎么能所有人都是外观一样的，这点使我萌发了自己搭建一个博客的想法。</p>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/杂谈/">杂谈</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a href="/2016/05/20/hello-world/#more">阅读全文 >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>

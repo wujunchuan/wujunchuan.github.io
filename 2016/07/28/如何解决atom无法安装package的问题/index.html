@@ -15,16 +15,19 @@
 
 
 
-<meta name="description" content="一个程序员的自我修养之路">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+<meta name="description" content="不知道你们有没有遇到类似的情况。 apm install failed in HTTP 404 error when gyp is downloading node.js with a fresh install atom #11080
+使用atom在线安装插件总是失败,之前遇到这个问题我直接用git clone下载插件,然后执行npm install也是可以的。但是不能用到atom的在线安装,总">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何解决atom无法安装package的问题">
+<meta property="og:url" content="http://yoursite.com/2016/07/28/如何解决atom无法安装package的问题/index.html">
 <meta property="og:site_name" content="一个膜蛤师的自我修养">
-<meta property="og:description" content="一个程序员的自我修养之路">
-<meta property="og:updated_time" content="2016-11-04T02:00:44.000Z">
+<meta property="og:description" content="不知道你们有没有遇到类似的情况。 apm install failed in HTTP 404 error when gyp is downloading node.js with a fresh install atom #11080
+使用atom在线安装插件总是失败,之前遇到这个问题我直接用git clone下载插件,然后执行npm install也是可以的。但是不能用到atom的在线安装,总">
+<meta property="og:updated_time" content="2016-11-15T14:29:41.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="一个程序员的自我修养之路">
+<meta name="twitter:title" content="如何解决atom无法安装package的问题">
+<meta name="twitter:description" content="不知道你们有没有遇到类似的情况。 apm install failed in HTTP 404 error when gyp is downloading node.js with a fresh install atom #11080
+使用atom在线安装插件总是失败,之前遇到这个问题我直接用git clone下载插件,然后执行npm install也是可以的。但是不能用到atom的在线安装,总">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -54,7 +57,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>about | 一个膜蛤师的自我修养</title>
+<title>如何解决atom无法安装package的问题 | 一个膜蛤师的自我修养</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -64,7 +67,7 @@
         fancybox: true,
         animate: true,
         isHome: false,
-        isPost: false,
+        isPost: true,
         isArchive: false,
         isTag: false,
         isCategory: false,
@@ -254,11 +257,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-如何解决atom无法安装package的问题" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/about/index.html" class="article-date">
-      <time datetime="2016-07-05T11:42:04.000Z" itemprop="datePublished">2016-07-05</time>
+      <a href="/2016/07/28/如何解决atom无法安装package的问题/" class="article-date">
+      <time datetime="2016-07-27T16:00:00.000Z" itemprop="datePublished">2016-07-28</time>
 </a>
 
 
@@ -273,7 +276,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      about
+      如何解决atom无法安装package的问题
     </h1>
   
 
@@ -283,6 +286,10 @@
         
 
         
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/atom/">atom</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tools/">tools</a></li></ul>
+    </div>
+
         <div class="clearfix"></div>
       </div>
       
@@ -290,36 +297,81 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <style>
-    .article-meta { display: none; }
-    #container .article .article-title { padding-right: 0; }
-    .article-header {
-        padding: 0;
-        padding-top: 26px;
-        border-left: none;
-        text-align: center;
-    }
-    .article-header:hover { border-left: none; }
-    .article-title { font-size: 1.6em }
-    .article-entry hr { margin: 0;}
-    .article-meta,
-    #container .article-info-post.article-info { display: none;}
-    #container .article .article-title { padding: 0; }
-</style>
+        <p>不知道你们有没有遇到类似的情况。 <a href="https://github.com/atom/atom/issues/11080" target="_blank" rel="external">apm install failed in HTTP 404 error when gyp is downloading node.js with a fresh install atom #11080</a></p>
+<p>使用atom在线安装插件总是失败,之前遇到这个问题我直接用<code>git clone</code>下载插件,然后执行<code>npm install</code>也是可以的。但是不能用到atom的在线安装,总有点不甘。后来查了很多文档，找到了原因……<br><a id="more"></a></p>
+<p>首先明确一下,这个原因是出现在gyp这个<code>native build tools</code>版本过低</p>
+<p>这个是我在Github上的回复<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">I use shadowsocks proxy ,edit the file ~/.atom/.apmrc:</div><div class="line"></div><div class="line">strict-ssl = false</div><div class="line">proxy=http://127.0.0.1:1080/</div><div class="line">http_proxy=proxy</div><div class="line">https_proxy=proxy</div><div class="line">and then run apm install --check</div><div class="line">if success you will see Checking for native build tools done</div><div class="line">remember,shadowsocks mode choose system agent mode</div></pre></td></tr></table></figure></p>
+<p>简单来说就是配置<code>~/.atom/.apmrc</code>这个文件的代理地址,将<code>shadowsocks</code>或对应的科学上网工具设置成全局(不要问我为什么要全局,因为我懒..)</p>
+<p>然后执行<code>apm install --check</code>,如果返回成功信息,这样就把本地构建工具更新成功了,就可以使用atom的在线安装插件服务了</p>
+<blockquote>
+<p>实在没办法 下载源码自己手动<code>npm install</code>也是个不错的选择啦</p>
+</blockquote>
 
-
-          
-        
       
     </div>
     
   </div>
   
     
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2016/07/28/如何解决atom无法安装package的问题/">如何解决atom无法安装package的问题</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">John Trump</a></p>
+        <p><span>发布时间:</span>2016-07-28, 00:00:00</p>
+        <p><span>最后更新:</span>2016-11-15, 22:29:41</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2016/07/28/如何解决atom无法安装package的问题/" title="如何解决atom无法安装package的问题">http://yoursite.com/2016/07/28/如何解决atom无法安装package的问题/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/07/28/如何解决atom无法安装package的问题/　　作者: John Trump" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
 
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2016/10/01/unified-wrap/">
+                    统一换行符
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2016/07/22/css-sass-introduction/">
+                    Sass简单入门
+                </a>
+            </div>
+        
+    </nav>
 
   
 </article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"true"];
+    </script>
 
 
 
@@ -337,7 +389,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"about　| 一个膜蛤师的自我修养　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"如何解决atom无法安装package的问题　| 一个膜蛤师的自我修养　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -353,7 +405,7 @@
     
       <div class="duoshuo" id="comments">
     <div id="comment-box" ></div>
-    <div class="ds-thread" id="ds-thread" data-thread-key="about/index.html" data-title="about" data-url="http://yoursite.com/about/index.html"></div>
+    <div class="ds-thread" id="ds-thread" data-thread-key="2016/07/28/如何解决atom无法安装package的问题/" data-title="如何解决atom无法安装package的问题" data-url="http://yoursite.com/2016/07/28/如何解决atom无法安装package的问题/"></div>
     <script>
         var duoshuoQuery = {short_name:"johntrump"};
         var loadComment = function(){
@@ -371,6 +423,26 @@
 </div>
     
 
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2016/10/01/unified-wrap/" title="上一篇: 统一换行符">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2016/07/22/css-sass-introduction/" title="下一篇: Sass简单入门">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/11/10/browser-cross/">浏览器跨域策略</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/29/Macbook Pro Retina休眠耗电现象修复/">MacBook Pro Retina 睡眠耗电现象修复</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/01/unified-wrap/">统一换行符</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/28/如何解决atom无法安装package的问题/">如何解决atom无法安装package的问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/22/css-sass-introduction/">Sass简单入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/12/如何在windows下使用包管理/">如何在Windows下使用包管理</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/01/css-priority/">CSS样式的优先级</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/22/如果在Hexo中添加README到github/">如何在Hexo中添加README到github</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/20/hello-world/">Hello World</a></li></ul>
 
 
 
