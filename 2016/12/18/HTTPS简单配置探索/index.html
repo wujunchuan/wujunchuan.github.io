@@ -15,15 +15,26 @@
 
 
 
-<meta name="description" content="一个程序员的自我修养之路">
-<meta property="og:type" content="website">
-<meta property="og:title" content="一个膜蛤师的自我修养">
-<meta property="og:url" content="http://yoursite.com/tags/windows/index.html">
+<meta name="description" content="HTTPS简单配置探索借助这个开源项目certbot for Apache可以很方便的配置好免费的SSL证书(Let&amp;#39;s Encrypt)
+
+如果要用在不同的Web Server上的话,可以在certbot index 查看文档">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用certbot申请HTTPS证书">
+<meta property="og:url" content="http://yoursite.com/2016/12/18/HTTPS简单配置探索/index.html">
 <meta property="og:site_name" content="一个膜蛤师的自我修养">
-<meta property="og:description" content="一个程序员的自我修养之路">
+<meta property="og:description" content="HTTPS简单配置探索借助这个开源项目certbot for Apache可以很方便的配置好免费的SSL证书(Let&amp;#39;s Encrypt)
+
+如果要用在不同的Web Server上的话,可以在certbot index 查看文档">
+<meta property="og:image" content="http://ww2.sinaimg.cn/large/006tNc79gw1fav24hdonmj30lk0imgmt.jpg">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/006tNc79gw1fav25gdyowj30w80pijuu.jpg">
+<meta property="og:image" content="http://ww2.sinaimg.cn/large/006tNc79gw1fav26idmg8j30wk0qimyu.jpg">
+<meta property="og:updated_time" content="2016-12-18T09:52:21.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="一个膜蛤师的自我修养">
-<meta name="twitter:description" content="一个程序员的自我修养之路">
+<meta name="twitter:title" content="使用certbot申请HTTPS证书">
+<meta name="twitter:description" content="HTTPS简单配置探索借助这个开源项目certbot for Apache可以很方便的配置好免费的SSL证书(Let&amp;#39;s Encrypt)
+
+如果要用在不同的Web Server上的话,可以在certbot index 查看文档">
+<meta name="twitter:image" content="http://ww2.sinaimg.cn/large/006tNc79gw1fav24hdonmj30lk0imgmt.jpg">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -53,7 +64,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Tag: windows | 一个膜蛤师的自我修养</title>
+<title>使用certbot申请HTTPS证书 | 一个膜蛤师的自我修养</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -63,9 +74,9 @@
         fancybox: true,
         animate: true,
         isHome: false,
-        isPost: false,
+        isPost: true,
         isArchive: false,
-        isTag: true,
+        isTag: false,
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
         scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
@@ -253,56 +264,204 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-HTTPS简单配置探索" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2016/07/12/如何在windows下使用包管理/" class="archive-article-date">
-      <time datetime="2016-07-11T16:00:00.000Z" itemprop="datePublished">07-12</time>
+    <div class="article-meta">
+      <a href="/2016/12/18/HTTPS简单配置探索/" class="article-date">
+      <time datetime="2016-12-17T16:00:00.000Z" itemprop="datePublished">2016-12-18</time>
 </a>
 
 
-        </div>
-         
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/07/12/如何在windows下使用包管理/">如何在Windows下使用包管理</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      使用certbot申请HTTPS证书
     </h1>
   
 
-        <div class="article-info info-on-archive">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
 
-          
+        
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tools/">tools</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/windows/">windows</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTTPS/">HTTPS</a></li></ul>
     </div>
 
-        </div>
         <div class="clearfix"></div>
-    </header>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="HTTPS简单配置探索"><a href="#HTTPS简单配置探索" class="headerlink" title="HTTPS简单配置探索"></a>HTTPS简单配置探索</h1><p>借助这个开源项目<a href="https://certbot.eff.org/#centos6-apache" target="_blank" rel="external">certbot for Apache</a>可以很方便的配置好免费的SSL证书(<code>Let&#39;s Encrypt</code>)</p>
+<blockquote>
+<p>如果要用在不同的Web Server上的话,可以在<a href="https://certbot.eff.org/" target="_blank" rel="external">certbot index </a>查看文档<br><a id="more"></a><br>Let’s Encrypt是很火的一个免费SSL证书发行项目，自动化发行证书，证书有90天的有效期。</p>
+</blockquote>
+<p>如果是CentOS 6、7，先执行：<code>yum install epel-release</code></p>
+<ol>
+<li><code>cd /root/</code></li>
+<li>下载cerbot-auto <code>wget https://dl.eff.org/certbot-auto --no-check-certificate</code></li>
+<li>赋予cerbot-auto执行权限<code>chmod +x ./certbot-auto</code></li>
+<li><code>./certbot-auto -n</code> 安装相关依赖包</li>
+</ol>
+<blockquote>
+<p>因为给pip默认的源是国外的,所以如果服务器是在国内的话,安装可能会比较慢.如果等了很久都卡在<strong>Installing Python packages</strong>的话,可以尝试修改一下pip源</p>
+<p>修改pip源见下</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">mkdir ~/.pip</div><div class="line">cat &gt; ~/.pip/pip.conf &lt;&lt;EOF</div><div class="line">[global]</div><div class="line">index-url = https://pypi.doubanio.com/simple/</div><div class="line"></div><div class="line">[install]</div><div class="line">trusted-host=pypi.doubanio.com</div><div class="line">EOF</div></pre></td></tr></table></figure>
+<p>安装完<code>cerbot-auto</code>之后,运行<code>./certbot-auto</code>,根据要求来输入<br><img src="http://ww2.sinaimg.cn/large/006tNc79gw1fav24hdonmj30lk0imgmt.jpg" alt="输入域名"></p>
+<p><img src="http://ww3.sinaimg.cn/large/006tNc79gw1fav25gdyowj30w80pijuu.jpg" alt="即将完成"></p>
+<p>这里可以选择是否允许http,如果选择了Secure模式的话,访问HTTP也会被自动跳转到HTTPS的<br><img src="http://ww2.sinaimg.cn/large/006tNc79gw1fav26idmg8j30wk0qimyu.jpg" alt="模式选择"></p>
+<p>Apache的配置文件会自动生成在<code>/etc/httpd/conf.d/ssl.conf</code>文件中</p>
+<h1 id="续期"><a href="#续期" class="headerlink" title="续期"></a>续期</h1><p>因为证书只有90天,你可以在定时脚本或系统任务中执行这条语句<br><code>~/certbot-auto renew --dry-run</code></p>
+<h1 id="参考阅读"><a href="#参考阅读" class="headerlink" title="参考阅读"></a>参考阅读</h1><p><a href="https://www.vpser.net/build/letsencrypt-certbot.html/comment-page-1" target="_blank" rel="external">免费SSL证书Let’s Encrypt(certbot)安装使用教程</a></p>
+
+      
+    </div>
+    
   </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2016/12/18/HTTPS简单配置探索/">使用certbot申请HTTPS证书</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">John Trump</a></p>
+        <p><span>发布时间:</span>2016-12-18, 00:00:00</p>
+        <p><span>最后更新:</span>2016-12-18, 17:52:21</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2016/12/18/HTTPS简单配置探索/" title="使用certbot申请HTTPS证书">http://yoursite.com/2016/12/18/HTTPS简单配置探索/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/12/18/HTTPS简单配置探索/　　作者: John Trump" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2016/11/10/browser-cross/">
+                    浏览器跨域策略
+                </a>
+            </div>
+        
+    </nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HTTPS简单配置探索"><span class="toc-number">1.</span> <span class="toc-text">HTTPS简单配置探索</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#续期"><span class="toc-number">2.</span> <span class="toc-text">续期</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#参考阅读"><span class="toc-number">3.</span> <span class="toc-text">参考阅读</span></a></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"true"];
+    </script>
+
+
 
     
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"使用certbot申请HTTPS证书　| 一个膜蛤师的自我修养　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
 
+    
+</div>
+
+
+
+
+
+
+
+    
+      <div class="duoshuo" id="comments">
+    <div id="comment-box" ></div>
+    <div class="ds-thread" id="ds-thread" data-thread-key="2016/12/18/HTTPS简单配置探索/" data-title="使用certbot申请HTTPS证书" data-url="http://yoursite.com/2016/12/18/HTTPS简单配置探索/"></div>
+    <script>
+        var duoshuoQuery = {short_name:"johntrump"};
+        var loadComment = function(){
+            var d = document, s = d.createElement('script');
+            s.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+            s.async = true; s.charset = 'UTF-8';
+            (d.head || d.body).appendChild(s);
+        }
+
+        
+    </script>
+    
+    <script> loadComment(); </script>
+
+</div>
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2016/11/10/browser-cross/" title="下一篇: 浏览器跨域策略">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/12/18/HTTPS简单配置探索/">使用certbot申请HTTPS证书</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/10/browser-cross/">浏览器跨域策略</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/29/Macbook Pro Retina休眠耗电现象修复/">MacBook Pro Retina 睡眠耗电现象修复</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/01/unified-wrap/">统一换行符</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/28/如何解决atom无法安装package的问题/">如何解决atom无法安装package的问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/22/css-sass-introduction/">Sass简单入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/12/如何在windows下使用包管理/">如何在Windows下使用包管理</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/01/css-priority/">CSS样式的优先级</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/22/如果在Hexo中添加README到github/">如何在Hexo中添加README到github</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/20/hello-world/">Hello World</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
