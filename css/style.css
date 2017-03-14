@@ -2354,6 +2354,9 @@ pre .javascript .function {
 #footer .visit #page-visit:hover .fa {
   color: #333;
 }
+#footer div {
+  margin: 5px 0;
+}
 .share {
   padding-left: 40px;
   margin: 1em auto 0.5em;
